@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_marginTop="@dimen/app_marge_10" android:layout_marginStart="@dimen/app_marge_10" android:layout_marginEnd="@dimen/app_marge_10" app:cardCornerRadius="@dimen/app_marge_5" style="@style/CardView.MyApp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:orientation="vertical" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:foreground="?selectableItemBackground" style="@style/CardView.Sub">
+        <TextView android:textColor="@color/black" android:id="@id/item_group_name" android:layout_marginTop="@dimen/app_marge_10" android:text="--" app:layout_constraintBottom_toTopOf="@id/item_group_mount" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextViewStyleBlack12Common" />
+        <TextView android:textColor="@color/text_gary_color" android:id="@id/item_group_mount" android:paddingBottom="@dimen/app_marge_10" android:layout_marginTop="@dimen/app_marge_5" android:text="--" android:drawablePadding="@dimen/app_marge_5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/item_group_name" style="@style/TextViewStyleGray12Common" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

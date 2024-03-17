@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/comm_item_civ_userphoto" android:layout_width="@dimen/height_portrait_small" android:layout_height="@dimen/height_portrait_small" android:layout_marginRight="@dimen/app_marge_14" fresco:roundAsCircle="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_normal" android:id="@id/comm_item_tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/app_marge_10" android:text="" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/comm_item_iv_manager" android:src="@mipmap/icon_post_tag_manager" android:layout_toRightOf="@id/comm_item_tv_username" style="@style/commu_item_tag_icon_style" />
+            <ImageView android:id="@id/comm_item_iv_sticky" android:src="@mipmap/icon_post_tag_sticky" android:layout_toRightOf="@id/comm_item_iv_manager" style="@style/commu_item_tag_icon_style" />
+            <ImageView android:id="@id/comm_item_iv_vote" android:src="@mipmap/icon_post_tag_vote" android:layout_toRightOf="@id/comm_item_iv_sticky" style="@style/commu_item_tag_icon_style" />
+            <TextView android:textSize="@dimen/textsize_10" android:textColor="@color/textcolor_weak" android:id="@id/comm_item_tv_ctime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/comm_item_tv_username" />
+        </RelativeLayout>
+        <ImageView android:id="@id/mypost_item_iv_delete" android:paddingLeft="5.0dip" android:paddingBottom="5.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/selector_delete" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_normal" android:ellipsize="end" android:id="@id/comm_item_tv_message" android:paddingLeft="@dimen/app_marge_14" android:paddingRight="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lines="2" android:lineSpacingMultiplier="1.5" />
+    <com.huahuacaocao.flowercare.view.multiimage.MultiImageView android:id="@id/comm_item_multiimage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_marge_10" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginRight="@dimen/app_marge_10" />
+    <include layout="@layout/view_visit_praise_comment_share" />
+    <View android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_marge_14" />
+</LinearLayout>

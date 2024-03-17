@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/img_user_center_community" android:id="@id/user_setting_menu_share" android:title="@string/my_community" />
+    <item android:icon="@mipmap/img_user_center_bind_account" android:id="@id/user_setting_menu_rate" android:title="@string/fragment_usercenter_menu_associate_account" />
+    <item android:icon="@mipmap/img_user_center_qa" android:id="@id/user_setting_menu_agreement" android:title="@string/fragment_usercenter_menu_faq" />
+    <item android:icon="@mipmap/img_user_center_feedback" android:id="@id/user_setting_menu_about" android:title="@string/fragment_usercenter_menu_feedback" />
+</menu>

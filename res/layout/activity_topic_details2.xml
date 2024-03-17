@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/postdetail_rootview" style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/bga_refersh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip">
+        <android.support.v7.widget.RecyclerView android:id="@id/topic_lv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    <ImageView android:id="@id/topic_top_iv_shadow" android:layout_width="fill_parent" android:layout_height="75.0dip" android:src="@mipmap/img_topic_top_shadow" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/title_bar_layout" android:layout_width="fill_parent" android:layout_height="@dimen/layout_titlebar_height">
+        <ImageView android:layout_gravity="center|left" android:id="@id/title_bar_return" android:paddingLeft="@dimen/std_titlebar_margin_left_right" android:paddingRight="@dimen/std_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/titlebar_back" android:scaleType="center" />
+        <TextView android:textSize="@dimen/title_bar_text_size" android:ellipsize="end" android:layout_gravity="center" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/titlebar_return_area_size" android:layout_marginRight="@dimen/titlebar_return_area_size" android:maxLines="1" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/title_bar_more" android:paddingLeft="@dimen/std_titlebar_margin_left_right" android:paddingRight="@dimen/std_titlebar_margin_left_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/hhcc_common_titlebar_button_more_white" android:scaleType="center" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/postdetail_bottom_layout" android:background="@color/white" android:paddingTop="@dimen/app_marge_10" android:paddingBottom="@dimen/app_marge_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+        <TextView android:textColorHint="@color/textcolor_weak" android:id="@id/postdetail_et_input_comment" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:hint="@string/activity_postdetail_comment_hint" android:maxLines="5" android:maxLength="250" android:layout_weight="1.0" android:textDirection="anyRtl" style="@style/EditTextStyleNoStroke" />
+        <Button android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_white" android:id="@id/postdetail_btn_send" android:background="@drawable/selector_btn_send_bg" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/app_marge_14" android:minHeight="30.0dip" android:text="@string/button_send" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/topic_gif_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <pl.droidsonroids.gif.GifImageView android:layout_gravity="center" android:id="@id/topic_gif_photo" android:layout_width="@dimen/app_item_height_80" android:layout_height="@dimen/app_item_height_80" android:src="@drawable/loading" />
+    </FrameLayout>
+</FrameLayout>

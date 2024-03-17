@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/selector_tv_tab_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tab_text" android:paddingLeft="@dimen/app_marge_10" android:paddingTop="@dimen/app_marge_10" android:paddingRight="@dimen/app_marge_10" android:paddingBottom="@dimen/app_marge_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通知" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/tab_red_point" android:visibility="invisible" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginRight="-16.0dip" android:src="@mipmap/img_titlebar_button_massage_point" android:scaleType="centerCrop" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/icon_my_community_post" android:id="@id/user_setting_menu_share" android:title="@string/my_post" />
+    <item android:icon="@mipmap/icon_my_community_comment" android:id="@id/user_setting_menu_rate" android:title="@string/my_comment" />
+    <item android:icon="@mipmap/icon_my_community_notice" android:id="@id/user_setting_menu_agreement" android:title="@string/my_notice" />
+    <item android:icon="@mipmap/icon_praise_like" android:id="@id/user_setting_menu_like" android:title="@string/my_like" />
+</menu>

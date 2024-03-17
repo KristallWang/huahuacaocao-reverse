@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fillViewport="true" style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_titlebar_text" />
+        <EditText android:textColorHint="@color/text_gray_color_invalidate" android:gravity="top" android:id="@id/growthdairypost_et_message" android:padding="10.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_page_marge" android:hint="@string/activity_growthdairypost_hint_dairy" android:maxLines="8" android:minLines="8" android:maxLength="250" style="@style/EditTextStyle" />
+        <com.huahuacaocao.hhcc_common.base.view.MyGridView android:id="@id/growthdairypost_gv_photo" android:visibility="gone" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/app_marge_10" android:layout_marginBottom="@dimen/app_page_marge" android:listSelector="#00ffffff" android:horizontalSpacing="@dimen/app_marge_10" android:verticalSpacing="@dimen/app_marge_10" android:numColumns="3" android:layout_marginStart="@dimen/app_page_marge" android:layout_marginEnd="@dimen/app_page_marge" />
+        <ImageView android:id="@id/growthdairypost_iv_photo" android:layout_width="@dimen/app_item_icon_80" android:layout_height="@dimen/app_item_icon_80" android:layout_margin="@dimen/app_page_marge" android:src="@mipmap/img_add_square" />
+    </LinearLayout>
+</ScrollView>

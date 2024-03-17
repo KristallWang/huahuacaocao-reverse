@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <LinearLayout style="@style/PageContentTranslateStyle">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatEditText android:textColorHint="@color/text_gray_color_invalidate" android:id="@id/fragment_plant_ed_search" android:layout_width="0.0dip" android:layout_marginTop="@dimen/app_marge_14" android:layout_marginBottom="@dimen/app_marge_14" android:hint="@string/activity_handaddflower_hint_search" android:singleLine="true" android:maxLength="100" android:drawablePadding="11.0dip" android:layout_weight="1.0" android:imeOptions="actionSearch" android:drawableStart="@mipmap/img_icon_search" style="@style/EditTextStyle" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/fragment_plant_ll_listview" android:visibility="visible" style="@style/PageContentTranslateStyle">
+            <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/fragment_plant_rel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.RecyclerView android:id="@id/fragment_plant_lv_flowers" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/ListViewStyle" />
+            </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/fragment_plant_ll_setting" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageView android:id="@id/iv_notfound_plant_infragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:src="@mipmap/img_res_not_found" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/textsize_13" android:textColor="@color/textcolor_weak" android:gravity="center" android:id="@id/fragment_plant_tv_tips" android:layout_marginTop="31.0dip" android:text="@string/common_dash" style="@style/TextViewStyleGray12Common" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

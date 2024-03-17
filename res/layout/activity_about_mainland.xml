@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar" />
+    <LinearLayout style="@style/PageContentTranslateStyle">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PageContentTranslateStyle">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="67.0dip" android:layout_height="67.0dip" android:layout_marginTop="40.0dip" fresco:actualImageScaleType="fitXY" fresco:backgroundImage="@mipmap/ic_launcher" fresco:roundedCornerRadius="5.0dip" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_normal" android:text="@string/hhcc_app_name" style="@style/TextViewStyleGray14Common" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:id="@id/about_tv_version" android:layout_marginTop="0.0dip" android:layout_marginBottom="40.0dip" android:text="@string/common_dash" style="@style/TextViewStyleGray14Common" />
+        </LinearLayout>
+        <include layout="@layout/line" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/AboutItemStyle">
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/activity_about_weixin_title" android:drawablePadding="@dimen/app_page_marge" android:layout_weight="1.0" android:drawableStart="@mipmap/img_about_wechat" />
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:id="@id/about_tv_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_about_weixin_value" />
+                </LinearLayout>
+                <include layout="@layout/line" />
+                <LinearLayout style="@style/AboutItemStyle">
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/activity_about_weibo_title" android:drawablePadding="@dimen/app_page_marge" android:layout_weight="1.0" android:drawableStart="@mipmap/img_about_weibo" />
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:id="@id/about_tv_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_about_weibo_value" />
+                </LinearLayout>
+                <include layout="@layout/line" />
+                <LinearLayout style="@style/AboutItemStyle">
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/activity_about_cs_title" android:drawablePadding="@dimen/app_page_marge" android:layout_weight="1.0" android:drawableStart="@mipmap/img_about_custom_service" />
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:id="@id/about_tv_custom_service_mail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_about_cs_value" />
+                </LinearLayout>
+                <include layout="@layout/line" />
+                <LinearLayout android:id="@id/about_ll_update" style="@style/AboutItemStyle">
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/activity_about_update_title" android:drawablePadding="@dimen/app_page_marge" android:layout_weight="1.0" android:drawableStart="@mipmap/img_about_software_new_version" />
+                    <ImageView android:id="@id/about_iv_new_version_red_point" android:padding="@dimen/app_marge_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hhcc_common_red_point" android:contentDescription="@string/app_name" />
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:id="@id/about_tv_new_version_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_about_update_value_latest" />
+                </LinearLayout>
+                <include layout="@layout/line" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

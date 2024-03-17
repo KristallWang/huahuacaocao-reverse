@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <com.huahuacaocao.flowercare.view.OverScrollTabLayout android:id="@id/comm_channel_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:tabIndicatorHeight="2.0dip" app:tabMode="scrollable" app:tabSelectedTextColor="@color/app_color" app:tabTextAppearance="@style/ChannelTabTextStyle" />
+        <ImageView android:layout_gravity="right" android:id="@id/comm_channel_img_right" android:paddingRight="@dimen/app_marge_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/icon_subnav_more" android:scaleType="fitXY" android:elevation="4.0dip" />
+    </LinearLayout>
+    <View android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_marge_5" />
+    <include layout="@layout/layout_base_refresh_recyclerview" />
+</LinearLayout>

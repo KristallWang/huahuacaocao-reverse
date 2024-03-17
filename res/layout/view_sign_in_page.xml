@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sign_in_content_layout" android:background="@drawable/shape_dialog_white_bg_little_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_20">
+        <FrameLayout android:id="@id/sign_in_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/sign_in_top_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/icon_sign_in_bg" android:adjustViewBounds="true" />
+            <TextView android:textColor="@color/app_color" android:layout_gravity="center" android:id="@id/sign_in_tv_top_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已连续签到" android:lines="1" />
+            <ImageView android:layout_gravity="center" android:id="@id/sign_in_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-30.0dip" android:src="@mipmap/icon_sign_in_title" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/app_color" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/sign_in_tv_signed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_page_marge" android:layout_marginBottom="-30.0dip" android:text="第--天" android:lines="1" />
+        </FrameLayout>
+        <ImageView android:id="@id/sign_in_signinview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/app_page_marge" android:src="@mipmap/icon_signin_coin_rule" android:adjustViewBounds="true" android:layout_below="@id/sign_in_top_layout" />
+        <LinearLayout android:orientation="vertical" android:id="@id/sign_in_tv_layout" android:background="@drawable/shape_signin_half_green_bg" android:padding="@dimen/app_page_marge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_page_marge" android:layout_marginRight="@dimen/app_page_marge" android:layout_below="@id/sign_in_signinview">
+            <TextView android:textColor="@color/app_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1天-5天：与签到天数相等的经验及花币" />
+            <TextView android:textColor="@color/app_color" android:paddingTop="@dimen/app_marge_5" android:paddingBottom="@dimen/app_marge_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－" android:lines="1" />
+            <TextView android:textColor="@color/app_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5天以后：每天获得5个经验及花币" />
+        </LinearLayout>
+        <Button android:id="@id/sign_in_btn_signin" android:layout_marginTop="@dimen/app_page_marge" android:text="签到" android:layout_below="@id/sign_in_tv_layout" style="@style/ButtonStyleCommonGreenFill" />
+    </RelativeLayout>
+    <ImageView android:id="@id/sign_in_top_close" android:padding="@dimen/app_marge_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:layout_marginRight="0.0dip" android:src="@mipmap/icon_sign_in_close" android:layout_alignTop="@id/sign_in_content_layout" android:layout_alignParentRight="true" />
+</RelativeLayout>

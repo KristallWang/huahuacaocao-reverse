@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <HorizontalScrollView android:id="@id/share_hsv_icon" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_100" android:fillViewport="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_100">
+                <TextView android:id="@id/share_tv_qq" android:text="QQ" android:drawableTop="@mipmap/img_share_qq" style="@style/MyTabStyle" />
+                <TextView android:id="@id/share_tv_weixin" android:text="@string/button_weixin" android:drawableTop="@mipmap/img_share_weixin" style="@style/MyTabStyle" />
+                <TextView android:id="@id/share_tv_wxcircle" android:text="@string/button_weixin_circle" android:drawableTop="@mipmap/img_share_circle" style="@style/MyTabStyle" />
+                <TextView android:id="@id/share_tv_sinaweibo" android:text="@string/button_sina" android:drawableTop="@mipmap/img_share_sinaweibo" style="@style/MyTabStyle" />
+                <TextView android:id="@id/share_tv_copy" android:text="@string/button_copy_link" android:drawableTop="@mipmap/img_share_copylink" style="@style/MyTabStyle" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <WebView android:id="@id/share_wv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/share_hsv_icon" android:overScrollMode="never" />
+    </RelativeLayout>
+</LinearLayout>

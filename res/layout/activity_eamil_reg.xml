@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/layout_titlebar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/email_reg_ll_form" android:background="@drawable/common_edittext_bg" android:padding="1.0dip" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/app_page_marge" android:layout_marginEnd="@dimen/app_page_marge" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/title_bar" app:layout_constraintVertical_bias="0.2">
+        <EditText android:id="@id/email_reg_et_email" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_50" android:hint="@string/email_reg_email" android:maxLines="1" android:inputType="textEmailAddress" style="@style/EditTextStyle" />
+        <include layout="@layout/line" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_50">
+            <EditText android:id="@id/email_reg_et_pwd" android:background="@color/white" android:layout_height="50.0dip" android:hint="@string/email_reg_pwd" android:maxLines="1" android:maxLength="16" android:layout_weight="4.0" android:inputType="textPassword" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/email_reg_cb_pwd_show" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0" style="@style/EditTextStyle" />
+            <CheckBox android:layout_gravity="center_vertical" android:id="@id/email_reg_cb_pwd_show" android:paddingTop="@dimen/app_marge_10" android:paddingBottom="@dimen/app_marge_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_pwd_state" android:layout_weight="1.0" android:paddingStart="@dimen/app_marge_10" android:layout_marginEnd="@dimen/app_page_marge" />
+        </LinearLayout>
+        <include layout="@layout/line" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_50">
+            <EditText android:id="@id/email_reg_et_code" android:background="@color/white" android:layout_height="@dimen/app_item_height_50" android:hint="@string/email_reg_code" android:maxLines="1" android:maxLength="6" android:layout_weight="4.0" android:inputType="number" android:layout_marginEnd="8.0dip" style="@style/EditTextStyle" />
+            <Button android:textSize="@dimen/textsize_10" android:id="@id/email_reg_bt_send_code" android:layout_width="120.0dip" android:layout_height="30.0dip" android:text="@string/email_reg_send_code" style="@style/ButtonStyleCommonGreenFillSmallWidthHeight" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/email_reg_bt_reg" android:layout_marginTop="@dimen/app_marge_32" android:text="@string/email_reg_verify_mailbox_login" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/email_reg_ll_form" style="@style/ButtonStyleCommonGreenFill" />
+</android.support.constraint.ConstraintLayout>

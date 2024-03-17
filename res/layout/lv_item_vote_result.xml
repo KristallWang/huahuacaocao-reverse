@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/lv_vote_result_tv_name" android:paddingTop="@dimen/app_marge_5" android:paddingBottom="@dimen/app_marge_5" android:layout_width="90.0dip" android:layout_height="@dimen/app_item_height_40" android:layout_marginRight="@dimen/app_marge_2" android:text="第一张" android:lines="1" style="@style/TextViewStyleGray14" />
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/lv_vote_result_progressbar" android:layout_width="0.0dip" android:layout_height="@dimen/app_marge_5" android:max="100" android:progressDrawable="@drawable/pb_app_color" android:layout_weight="1.0" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+    <TextView android:gravity="center" android:id="@id/lv_vote_result_tv_num" android:layout_width="90.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:text="1242票" style="@style/TextViewStyleGray14" />
+    <TextView android:gravity="center" android:id="@id/lv_vote_result_tv_percent" android:layout_width="45.0dip" android:layout_marginLeft="@dimen/app_marge_5" android:layout_marginRight="@dimen/app_marge_5" android:text="88.8%" style="@style/TextViewStyleGray14" />
+</LinearLayout>

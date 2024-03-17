@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/app_page_marge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_popup_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/app_marge_10" android:paddingEnd="@dimen/app_marge_10">
+        <TextView android:id="@id/growth_pop_tv_day" android:padding="@dimen/app_marge_5" android:text="@string/daily_growth_report" style="@style/TextViewStyleWhite14Common" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.049999952dip" />
+        <TextView android:id="@id/growth_pop_tv_week" android:padding="@dimen/app_marge_5" android:text="@string/week_growth_report" style="@style/TextViewStyleWhite14Common" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.049999952dip" />
+        <TextView android:id="@id/growth_pop_tv_month" android:padding="@dimen/app_marge_5" android:text="@string/monthly_growth_report" style="@style/TextViewStyleWhite14Common" />
+    </LinearLayout>
+</LinearLayout>

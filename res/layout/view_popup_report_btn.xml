@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingRight="@dimen/app_page_marge" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@mipmap/bg_popup_down" android:paddingLeft="@dimen/app_page_marge" android:paddingRight="@dimen/app_page_marge" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/selector_report_text_color" android:id="@id/pop_tv_report" android:paddingLeft="@dimen/app_marge_10" android:paddingTop="@dimen/app_marge_5" android:paddingRight="@dimen/app_marge_10" android:paddingBottom="@dimen/app_marge_5" android:text="举报" android:drawableLeft="@mipmap/icon_social_report" android:drawablePadding="@dimen/app_marge_5" style="@style/TextViewStyleWhite14Common" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.049999952dip" />
+        <TextView android:textColor="@color/selector_report_text_color" android:id="@id/pop_tv_message" android:paddingLeft="@dimen/app_marge_10" android:paddingTop="@dimen/app_marge_5" android:paddingRight="@dimen/app_marge_10" android:paddingBottom="@dimen/app_marge_5" android:text="私信" android:drawableLeft="@mipmap/icon_send_sixin" android:drawablePadding="@dimen/app_marge_5" style="@style/TextViewStyleWhite14Common" />
+    </LinearLayout>
+</LinearLayout>

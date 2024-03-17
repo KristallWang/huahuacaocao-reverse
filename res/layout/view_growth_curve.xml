@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_growth_curve_ll_growth_curve" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_10" android:layout_marginBottom="@dimen/app_marge_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/view_growth_curve_tv_light" android:text="光照" android:drawableTop="@mipmap/img_home_state_light_gray" style="@style/ReportYesterDayStyle" />
+    <TextView android:id="@id/view_growth_curve_tv_water" android:text="水分" android:drawableTop="@mipmap/img_home_state_water_gray" style="@style/ReportYesterDayStyle" />
+    <TextView android:id="@id/view_growth_curve_tv_temp" android:text="温度" android:drawableTop="@mipmap/img_home_state_temp_gray" style="@style/ReportYesterDayStyle" />
+    <TextView android:id="@id/view_growth_curve_tv_ec" android:text="肥力" android:drawableTop="@mipmap/img_home_state_ec_gray" style="@style/ReportYesterDayStyle" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_50"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/textcolor_weak" android:ellipsize="end" android:id="@id/rv_switch_language_item_tv_title" android:text="标题" android:maxLines="1" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextViewStyleBlack12Common" />
+    <android.support.v7.widget.AppCompatRadioButton android:id="@id/rv_switch_language_item_cb_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/app_page_marge" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView app:layout_constraintBottom_toBottomOf="parent" style="@style/LineStyle" />
+</android.support.constraint.ConstraintLayout>

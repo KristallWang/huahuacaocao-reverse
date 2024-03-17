@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar_text" />
+    <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_14">
+        <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/edit_user_info_avator" android:layout_width="@dimen/app_item_height_80" android:layout_height="@dimen/app_item_height_80" android:layout_centerInParent="true" fresco:roundAsCircle="true" fresco:roundingBorderColor="@color/line_color" fresco:roundingBorderWidth="1.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/edit_user_info_avator_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@mipmap/icon_camera" android:layout_alignRight="@id/edit_user_info_avator" android:layout_alignBottom="@id/edit_user_info_avator" android:layout_marginEnd="10.0dip" />
+    </RelativeLayout>
+    <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_line_height" android:layout_marginTop="@dimen/app_marge_14" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/user_nick_name" android:layout_marginStart="5.0dip" style="@style/TextViewStyleGray14" />
+        <com.huahuacaocao.hhcc_common.base.view.ClearableEdittext android:textSize="14.0sp" android:textColor="@color/textcolor_normal" android:gravity="right" android:id="@id/edit_user_info_edittext" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:maxLength="20" android:drawablePadding="@dimen/app_marge_10" android:layout_weight="1.0" android:textDirection="anyRtl" android:layout_marginEnd="5.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_line_height" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" />
+</LinearLayout>

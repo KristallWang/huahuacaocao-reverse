@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar_text" />
+    <android.support.v7.widget.RecyclerView android:id="@id/switch_language_rv_language" style="@style/RecyclerViewStyle" />
+</LinearLayout>

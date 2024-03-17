@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/smart_config_common_icon" android:layout_width="83.29999dip" android:layout_height="83.29999dip" android:layout_marginTop="110.0dip" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/config_success_text" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/kuailian_success" android:layout_below="@id/smart_config_common_icon" android:layout_centerHorizontal="true" />
+    <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_button" android:gravity="center" android:id="@id/next_btn" android:background="@drawable/common_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="20.0dip" android:text="@string/next_button" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+</RelativeLayout>

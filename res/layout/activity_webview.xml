@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar_pure_text" />
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/webview_rel_wv" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/webview_wv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

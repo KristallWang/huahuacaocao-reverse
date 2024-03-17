@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar" />
+    <ScrollView android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/app_page_marge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="20.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_page_marge">
+                <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/editplantinfo_adv_plant_photo" android:layout_width="@dimen/app_item_height_80" android:layout_height="@dimen/app_item_height_80" android:layout_centerInParent="true" fresco:roundAsCircle="true" fresco:roundingBorderColor="@android:color/white" fresco:roundingBorderWidth="0.5dip" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_camera_mask" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginStart="@dimen/app_marge_16" android:layout_marginEnd="@dimen/app_marge_16">
+                <TextView android:ellipsize="end" android:id="@id/editplantinfo_tv_plant_name" android:text="--" android:lines="1" android:singleLine="true" android:drawablePadding="@dimen/app_marge_5" android:layout_weight="1.0" android:drawableStart="@mipmap/icon_flower_device" style="@style/TextViewStyleGray14Common" />
+                <ImageView android:id="@id/editplantinfo_iv_edit_plant_name" android:padding="@dimen/app_marge_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/edit_plant_info_iv_pencil" android:layout_marginEnd="@dimen/app_marge_10" />
+            </LinearLayout>
+            <RelativeLayout android:background="@drawable/shape_white_bg_corner" android:paddingTop="@dimen/app_marge_10" android:paddingBottom="@dimen/app_marge_10" android:layout_width="fill_parent" android:layout_height="70.0dip" android:paddingStart="@dimen/app_marge_16" android:paddingEnd="@dimen/app_marge_16" android:layout_marginStart="@dimen/app_page_marge" android:layout_marginEnd="@dimen/app_page_marge">
+                <TextView android:text="@string/activity_editplantinfo_growth_time" android:drawablePadding="@dimen/app_marge_5" android:layout_centerVertical="true" android:drawableStart="@drawable/shape_dot_blue" android:layout_marginStart="0.0dip" style="@style/TextViewStyleBlack14Common" />
+                <TextView android:textSize="@dimen/textsize_22" android:id="@id/editplantinfo_tv_monitor_day_num" android:layout_margin="0.0dip" android:text="--" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/TextViewStyleBlack14Common" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_white_bg_corner" android:padding="@dimen/app_marge_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_16" android:layout_marginStart="@dimen/app_page_marge" android:layout_marginEnd="@dimen/app_page_marge">
+                <TextView android:layout_margin="0.0dip" android:text="@string/activity_editplantinfo_plant_info" android:drawablePadding="@dimen/app_marge_5" android:drawableStart="@mipmap/edit_plant_info_circle" style="@style/TextViewStyleGray14Common" />
+                <com.huahuacaocao.hhcc_common.base.view.MyListView android:id="@id/editplantinfo_mylv_baseinfo" android:layout_marginTop="@dimen/app_marge_16" style="@style/ListViewStyle" />
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/editplantinfo_tv_all_plant_info" android:background="@drawable/shape_btn_gray_stroke_white_bg" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_marginTop="@dimen/app_marge_16" android:text="@string/see_more" android:paddingStart="@dimen/app_marge_32" android:paddingEnd="@dimen/app_marge_32" style="@style/TextViewStyleGray14Common" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/app_content_color" android:fitsSystemWindows="true" style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/main_viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include layout="@layout/line_fill" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:id="@id/tab_tv_device" android:text="@string/activity_main_tab_device" android:drawableTop="@drawable/tab_my_device" style="@style/MyTabStyle" />
+        <TextView android:id="@id/tab_tv_plant" android:text="@string/activity_main_tab_plant" android:drawableTop="@drawable/tab_my_plant" style="@style/MyTabStyle" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/tab_tv_community_layout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/tab_tv_community" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_main_tab_community" android:drawableTop="@drawable/tab_bbs" style="@style/MyTabStyle" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/tab_iv_community_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginRight="-15.0dip" android:src="@mipmap/img_titlebar_button_massage_point" android:scaleType="center" />
+        </FrameLayout>
+        <TextView android:layout_gravity="center" android:id="@id/tab_tv_shop" android:visibility="gone" android:text="@string/activity_main_tab_shop" android:drawableTop="@drawable/tab_mall" style="@style/MyTabStyle" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/tab_tv_user" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_main_tab_me" android:drawableTop="@drawable/tab_user" style="@style/MyTabStyle" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/tab_iv_user_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginRight="-15.0dip" android:src="@mipmap/img_titlebar_button_massage_point" android:scaleType="center" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

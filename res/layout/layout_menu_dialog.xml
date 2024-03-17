@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/menu_root" android:background="@color/dialog_muenu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/menu_dialog_iv_cancel" android:background="@drawable/common_titlebar_button_back2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginEnd="15.0dip" />
+    <ListView android:id="@id/menu_dialog_lv_menu" android:scrollbars="none" android:layoutAnimation="@anim/menu_dialog_layout_anim" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@color/text_white_color" android:dividerHeight="0.0dip" android:overScrollMode="never" />
+</LinearLayout>

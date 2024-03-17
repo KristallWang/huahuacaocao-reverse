@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/base_ui_connect_manually" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/connect_ap_text_color" android:gravity="center_vertical" android:id="@id/manual_connect_icon" android:background="@drawable/connect_ap_manually" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/black_80_transparent" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/manual_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="20.0dip" />
+</LinearLayout>

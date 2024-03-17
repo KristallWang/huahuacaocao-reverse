@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/flower_care_bj" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/title_bar_layout" android:background="@color/translate_black_color" android:layout_width="fill_parent" android:layout_height="@dimen/layout_titlebar_height">
+        <ImageView android:layout_gravity="start|center" android:id="@id/title_bar_return" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/titlebar_back_white" android:paddingStart="@dimen/app_marge_14" android:paddingEnd="@dimen/app_marge_14" />
+        <TextView android:textSize="@dimen/title_bar_text_size" android:textColor="@color/title_bar_text_color_white" android:ellipsize="end" android:layout_gravity="center" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flower_menu" android:maxLines="1" android:layout_marginStart="@dimen/titlebar_return_area_size" android:layout_marginEnd="@dimen/titlebar_return_area_size" />
+    </FrameLayout>
+    <ScrollView android:background="@color/translate_black_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/flower_home_menu_tv_plant_setting" android:text="@string/flower_menu_plant_setting" android:drawableStart="@mipmap/icon_flower_menu_palnt_setting" style="@style/FlowerMenuTextStyle" />
+            <View style="@style/FlowerMenuLineStyle" />
+            <TextView android:id="@id/flower_home_menu_tv_params_setting" android:text="@string/flower_menu_params_setting" android:drawableStart="@mipmap/icon_flower_menu_params_setting" style="@style/FlowerMenuTextStyle" />
+            <View style="@style/FlowerMenuLineStyle" />
+            <TextView android:id="@id/flower_home_menu_tv_switch_plant" android:text="@string/activity_switchplant_page_title" android:drawableStart="@mipmap/icon_flower_menu_switch_palnt" style="@style/FlowerMenuTextStyle" />
+            <View style="@style/FlowerMenuLineStyle" />
+            <TextView android:id="@id/flower_home_menu_tv_device_setting" android:text="@string/flower_menu_device_setting" android:drawableStart="@mipmap/icon_flower_menu_device_setting" style="@style/FlowerMenuTextStyle" />
+            <View style="@style/FlowerMenuLineStyle" />
+            <TextView android:id="@id/flower_home_menu_tv_growth_record" android:text="@string/titlebar_text_record" android:drawableStart="@mipmap/icon_flower_menu_history_data" style="@style/FlowerMenuTextStyle" />
+            <View style="@style/FlowerMenuLineStyle" />
+            <TextView android:id="@id/flower_home_menu_tv_plant_diary" android:text="@string/flower_menu_plant_diary" android:drawableStart="@mipmap/icon_flower_menu_growth_record" style="@style/FlowerMenuTextStyle" />
+            <View style="@style/FlowerMenuLineStyle" />
+            <TextView android:id="@id/flower_home_menu_tv_comunity" android:visibility="gone" android:text="@string/activity_main_tab_community" android:drawableStart="@mipmap/icon_flower_menu_community" style="@style/FlowerMenuTextStyle" />
+            <View android:id="@id/flower_home_menu_tv_comunity_line" android:visibility="gone" style="@style/FlowerMenuLineStyle" />
+            <TextView android:id="@id/flower_home_menu_tv_notify_record" android:visibility="gone" android:text="@string/flower_menu_notify_record" android:drawableStart="@mipmap/icon_flower_menu_notify_setting" style="@style/FlowerMenuTextStyle" />
+            <View android:visibility="gone" style="@style/FlowerMenuLineStyle" />
+            <TextView android:id="@id/flower_home_menu_tv_no_disturbing_setting" android:visibility="gone" android:text="@string/flower_menu_no_disturbing_setting" android:drawableStart="@mipmap/icon_flower_menu_no_disturbing_setting" style="@style/FlowerMenuTextStyle" />
+            <View android:id="@id/flower_home_menu_tv_no_disturbing_line" android:visibility="gone" style="@style/FlowerMenuLineStyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

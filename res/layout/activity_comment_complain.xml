@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar" />
+    <RelativeLayout android:padding="@dimen/app_page_marge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/content_detail_civ_userphoto" android:layout_width="@dimen/height_portrait_small" android:layout_height="@dimen/height_portrait_small" android:layout_marginRight="@dimen/app_marge_14" fresco:roundAsCircle="true" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_normal" android:id="@id/content_detail_tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_10" android:layout_marginBottom="@dimen/app_marge_10" android:text="name" android:layout_toRightOf="@id/content_detail_civ_userphoto" />
+        <TextView android:textSize="@dimen/textsize_10" android:textColor="@color/textcolor_weak" android:id="@id/content_detail_tv_ctime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12nian12yue" android:layout_toRightOf="@id/content_detail_civ_userphoto" android:layout_below="@id/content_detail_tv_username" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/textsize_16" android:textColor="@color/textcolor_normal" android:gravity="center" android:id="@id/post_content_tv_tip" android:paddingLeft="@dimen/app_marge_32" android:paddingTop="@dimen/app_marge_16" android:paddingRight="@dimen/app_marge_32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/post_content_btn_complain" android:paddingLeft="@dimen/app_item_height_40" android:paddingRight="@dimen/app_item_height_40" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="@dimen/app_marge_16" android:layout_marginBottom="@dimen/app_marge_16" android:text="我要申诉" style="@style/ButtonStyleCommonGreenFill" />
+</LinearLayout>

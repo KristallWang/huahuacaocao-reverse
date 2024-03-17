@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_page_marge" android:layout_marginTop="@dimen/app_page_marge" android:layout_marginRight="@dimen/app_page_marge">
+        <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/community_activity_notice_iv_luck" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/app_page_marge" android:layout_weight="1.0" />
+        <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/community_activity_notice_iv_role" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

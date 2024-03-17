@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/PageContentStyle">
+        <include layout="@layout/layout_titlebar_pure_text" />
+        <TextView android:textStyle="bold" android:paddingLeft="@dimen/app_marge_16" android:paddingTop="@dimen/app_marge_10" android:paddingRight="@dimen/app_marge_16" android:paddingBottom="@dimen/app_marge_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gdpr.download.data" />
+        <TextView android:paddingLeft="@dimen/app_marge_16" android:paddingTop="@dimen/app_marge_10" android:paddingRight="@dimen/app_marge_16" android:paddingBottom="@dimen/app_marge_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gdpr.download.data.detail" />
+        <Button android:id="@id/btn_download_data" android:layout_marginTop="@dimen/app_marge_16" android:text="@string/gdpr.download.mydata" style="@style/ButtonStyleRed" />
+        <View android:background="@color/color_split_line" android:layout_width="fill_parent" android:layout_height="@dimen/app_marge_5" android:layout_marginTop="@dimen/app_marge_16" />
+        <TextView android:textStyle="bold" android:paddingLeft="@dimen/app_marge_16" android:paddingTop="@dimen/app_marge_10" android:paddingRight="@dimen/app_marge_16" android:paddingBottom="@dimen/app_marge_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gdpr.delete.logout" />
+        <TextView android:paddingLeft="@dimen/app_marge_16" android:paddingTop="@dimen/app_marge_10" android:paddingRight="@dimen/app_marge_16" android:paddingBottom="@dimen/app_marge_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gdpr.tips" />
+        <Button android:id="@id/delete_data_and_logout" android:layout_marginTop="@dimen/app_marge_16" android:text="@string/gdpr.delete.logout" style="@style/ButtonStyleRed" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_downloading_view" android:background="@color/black_60_transparent" android:visibility="gone" android:layout_width="@dimen/app_item_height_140" android:layout_height="@dimen/app_item_height_140">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_download_loading" android:padding="@dimen/app_marge_10" android:layout_width="@dimen/app_item_icon_80" android:layout_height="@dimen/app_item_icon_80" android:src="@drawable/bga_refresh_loding_vegtrug" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_download_msg" android:padding="@dimen/app_marge_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gdpr.prepare.data" />
+    </LinearLayout>
+</FrameLayout>

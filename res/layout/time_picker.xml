@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/timePickerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huahuacaocao.hhcc_common.base.view.NumberPicker android:id="@id/hour" android:background="@mipmap/number_picker_bg_first" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picker_hour" android:layout_weight="1.0" />
+    <com.huahuacaocao.hhcc_common.base.view.NumberPicker android:id="@id/minute" android:background="@mipmap/number_picker_bg_middle" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picker_minite" android:layout_weight="1.0" />
+    <com.huahuacaocao.hhcc_common.base.view.NumberPicker android:id="@id/amPm" android:background="@mipmap/number_picker_bg_last" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

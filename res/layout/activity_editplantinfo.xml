@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/app_color" style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar_text" />
+    <ScrollView android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_page_marge">
+                <com.huahuacaocao.hhcc_common.base.view.CircleImageView android:id="@id/editplantinfo_iv_plant_photo" android:layout_width="@dimen/app_item_height_80" android:layout_height="@dimen/app_item_height_80" android:src="@mipmap/img_no_photos" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@mipmap/icon_camera" android:layout_alignRight="@id/editplantinfo_iv_plant_photo" android:layout_alignBottom="@id/editplantinfo_iv_plant_photo" android:layout_marginEnd="10.0dip" />
+            </RelativeLayout>
+            <com.huahuacaocao.hhcc_common.base.view.ClearableEdittext android:textSize="@dimen/textsize_12" android:id="@id/editplantinfo_et_plant_alias" android:focusable="true" android:layout_height="@dimen/app_item_icon_30" android:layout_margin="@dimen/app_page_marge" android:hint="@string/activity_editplantinfo_alias_hint" android:singleLine="true" android:maxLength="25" android:layout_toRightOf="@id/editplantinfo_iv_plant_photo" style="@style/EditTextStyle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/app_page_marge" android:layout_toRightOf="@id/editplantinfo_iv_plant_photo" android:layout_alignParentBottom="true">
+                <Button android:id="@id/editplantinfo_bt_add_plant" android:layout_width="0.0dip" android:layout_height="@dimen/app_item_icon_30" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="@string/button_editplantinfo_add_plant" android:layout_weight="1.0" android:layout_toRightOf="@id/editplantinfo_iv_plant_photo" android:paddingStart="@dimen/app_marge_5" android:paddingEnd="@dimen/app_marge_5" android:layout_marginStart="0.0dip" android:layout_marginEnd="@dimen/app_marge_5" style="@style/ButtonStyleCommonGreenFill" />
+                <Button android:id="@id/editplantinfo_bt_switch_plant" android:layout_width="0.0dip" android:layout_height="@dimen/app_item_icon_30" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="@string/button_editplantinfo_switch_plant" android:layout_weight="1.0" android:paddingStart="@dimen/app_marge_5" android:paddingEnd="@dimen/app_marge_5" android:layout_marginStart="@dimen/app_marge_5" android:layout_marginEnd="0.0dip" style="@style/ButtonStyleCommonGreenFill" />
+            </LinearLayout>
+            <include layout="@layout/line" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_100">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_marginTop="@dimen/app_marge_10" android:text="@string/activity_editplantinfo_growth_time" android:layout_centerHorizontal="true" style="@style/TextViewStyleBlack14Common" />
+                    <TextView android:textSize="@dimen/textsize_48" android:id="@id/editplantinfo_tv_plant_day" android:layout_marginBottom="@dimen/app_marge_10" android:text="0" android:includeFontPadding="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginEnd="0.0dip" style="@style/TextViewStyleBlack14Common" />
+                </RelativeLayout>
+                <include layout="@layout/line_horizontal" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_marginTop="@dimen/app_marge_10" android:text="@string/activity_editplantinfo_care_index" android:layout_centerHorizontal="true" style="@style/TextViewStyleBlack14Common" />
+                    <TextView android:textSize="@dimen/textsize_48" android:id="@id/editplantinfo_tv_plant_care" android:layout_marginBottom="@dimen/app_marge_10" android:text="100" android:includeFontPadding="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginEnd="0.0dip" style="@style/TextViewStyleBlack14Common" />
+                    <TextView android:textStyle="italic" android:text="%" android:includeFontPadding="true" android:layout_toRightOf="@id/editplantinfo_tv_plant_care" android:layout_alignBaseline="@id/editplantinfo_tv_plant_care" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/app_marge_5" style="@style/TextViewStyleGray14Common" />
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/line" />
+            <TextView android:text="@string/activity_editplantinfo_base_info" style="@style/TextViewStyleGray12Common" />
+            <include layout="@layout/line" />
+            <com.huahuacaocao.hhcc_common.base.view.MyListView android:id="@id/editplantinfo_mylv_baseinfo" style="@style/ListViewStyle" />
+            <TextView android:textColor="@color/app_color" android:gravity="center_horizontal" android:id="@id/editplantinfo_tv_all_plant_info" android:padding="@dimen/app_page_marge" android:layout_width="fill_parent" android:text="@string/see_more" style="@style/TextViewStyleGray14Common" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

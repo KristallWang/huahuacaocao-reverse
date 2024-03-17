@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miot.service.common.widget.CustomPullDownRefreshLinearLayout android:orientation="vertical" android:id="@id/wifi_refresh_container" android:background="@color/class_T" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/wifi_list_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/class_text_11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="28.0dip" android:text="@string/kualian_conn_title" />
+            <LinearLayout android:background="@color/class_U" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="23.0dip" />
+            <com.miot.service.common.widget.ExpandListView android:scrollbarStyle="outsideOverlay" android:id="@id/conn_wifi_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" android:listSelector="@android:color/transparent" android:divider="@null" />
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/class_text_11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="28.0dip" android:text="@string/kualian_unconn_title" />
+            <LinearLayout android:background="@color/class_U" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="23.0dip" />
+            <com.miot.service.common.widget.ExpandListView android:scrollbarStyle="outsideOverlay" android:id="@id/unconn_wifi_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" android:listSelector="@android:color/transparent" android:divider="@null" />
+        </LinearLayout>
+    </ScrollView>
+</com.miot.service.common.widget.CustomPullDownRefreshLinearLayout>

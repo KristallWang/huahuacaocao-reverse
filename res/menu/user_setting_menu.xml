@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/img_user_center_rank" android:id="@id/user_setting_menu_rate" android:title="@string/fragment_usercenter_menu_rate" />
+    <item android:icon="@mipmap/img_user_center_user_agreement" android:id="@id/user_setting_menu_agreement" android:title="@string/fragment_usercenter_menu_user_agreement" />
+    <item android:icon="@mipmap/img_user_center_user_agreement" android:id="@id/user_setting_menu_privacy" android:title="@string/fragment_usercenter_menu_user_privacy" />
+    <item android:icon="@mipmap/img_user_center_about" android:id="@id/user_setting_menu_about" android:title="@string/fragment_usercenter_menu_about" />
+    <item android:icon="@mipmap/img_user_center_clear_cache" android:id="@id/user_setting_menu_clear_cache" android:title="@string/fragment_usercenter_menu_clear_cache" />
+    <item android:icon="@mipmap/icon_database" android:id="@id/user_setting_menu_delete_account" android:title="@string/gdpr.download.or.delete.data" />
+    <item android:icon="@mipmap/group_manager" android:id="@id/user_setting_menu_group" android:title="分组管理" />
+</menu>

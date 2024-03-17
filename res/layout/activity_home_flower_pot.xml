@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/home_fl_page" style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:hhcc="http://schemas.android.com/apk/res-auto">
+    <com.huahuacaocao.hhcc_common.base.view.ScrollViewCommon android:id="@id/home_svc_show" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:fadeScrollbars="false" android:overScrollMode="never">
+        <LinearLayout android:id="@id/home_ll_sv_show" style="@style/PageContentTranslateStyle">
+            <FrameLayout android:id="@id/home_fl_page1" android:layout_width="fill_parent" android:layout_height="300.0dip">
+                <LinearLayout android:id="@id/home_ll_page1" android:layout_height="300.0dip" style="@style/PageContentStyle">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.huahuacaocao.flowercare.view.HomeAnimBackground android:id="@id/home_hab" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <Button android:textSize="@dimen/textsize_14" android:textColor="@color/text_white_color" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/home_btn_watch" android:background="@drawable/selector_btn_black" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/app_marge_10" android:text="@string/button_temporary_care" />
+                        <RelativeLayout android:layout_gravity="bottom" android:id="@id/home_fl_history_upload_tip" android:background="#ffffc778" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="29.0dip">
+                            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:gravity="center" android:id="@id/home_tv_history_upload_tip_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/home_iv_history_upload_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_btn_close" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/app_marge_10" android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_ll_plant_info" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                        <com.huahuacaocao.hhcc_common.base.view.CircleImageView android:id="@id/home_civ_plant_icon" android:layout_width="@dimen/height_portrait_large" android:layout_height="@dimen/height_portrait_large" android:src="@mipmap/img_no_photos" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" hhcc:civ_border_color="@android:color/white" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/textsize_13" android:textColor="@color/textcolor_strong" android:ellipsize="end" android:id="@id/home_tv_plant_alias" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_10">
+                                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:ellipsize="end" android:id="@id/home_tv_plant_name" android:layout_width="80.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:id="@id/home_tv_plant_growth_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/app_marge_10" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_home_item_arrow_right" android:layout_marginEnd="@dimen/app_marge_14" />
+                    </LinearLayout>
+                    <include layout="@layout/line_fill" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layoutDirection="ltr">
+                        <com.huahuacaocao.flowercare.view.FlowerStateView android:id="@id/home_fsv_water" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layoutDirection="ltr" hhcc:abnormalIcon="@mipmap/img_home_state_water_gray" hhcc:normalIcon="@mipmap/img_home_state_water" hhcc:stateMessage="" hhcc:stateName="@string/activity_home_state_water" />
+                        <include layout="@layout/line_horizontal_fill" />
+                        <com.huahuacaocao.flowercare.view.FlowerStateView android:id="@id/home_fsv_ec" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layoutDirection="ltr" hhcc:abnormalIcon="@mipmap/img_home_state_ec_gray" hhcc:normalIcon="@mipmap/img_home_state_ec" hhcc:stateMessage="" hhcc:stateName="@string/activity_home_state_ec" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layoutDirection="ltr">
+                        <com.huahuacaocao.flowercare.view.HomePotView android:id="@id/home_hov_water" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" android:layout_weight="1.0" android:layoutDirection="ltr" hhcc:unit="%" hhcc:valueTextColor="@color/state_water" />
+                        <include layout="@layout/line_horizontal_fill" />
+                        <com.huahuacaocao.flowercare.view.HomePotView android:id="@id/home_hov_ec" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" android:layout_weight="1.0" android:layoutDirection="ltr" hhcc:unit="μS/cm" hhcc:valueTextColor="@color/state_ec" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_gravity="bottom" android:id="@id/home_rl_connection_mask" android:background="@color/app_content_color" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="199.0dip">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_weak" android:gravity="center" android:id="@id/home_tv_connection_mask_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/activity_home_ble_connecting" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@mipmap/img_icon_home_logo" android:layout_marginEnd="4.0dip" />
+                            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <com.huahuacaocao.flowercare.view.MovingDots android:id="@id/home_md_conn_state_dots" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <ImageView android:layout_gravity="center" android:id="@id/home_iv_connection_mask_fail" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_fail" />
+                            </FrameLayout>
+                            <ImageView android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@mipmap/img_icon_home_phone" android:layout_marginStart="4.0dip" />
+                        </LinearLayout>
+                        <Button android:layout_gravity="bottom" android:id="@id/home_btn_retry" android:visibility="gone" android:layout_marginBottom="@dimen/app_marge_10" android:text="@string/button_ble_connect" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ButtonStyleCommonGrayStrokeSingleWidth" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <include layout="@layout/line_fill" />
+            <LinearLayout android:orientation="vertical" android:id="@id/home_ll_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </com.huahuacaocao.hhcc_common.base.view.ScrollViewCommon>
+    <include layout="@layout/layout_titlebar_translate" />
+</FrameLayout>

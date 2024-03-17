@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/cb_plant_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:src="@mipmap/oval_white" android:layout_marginStart="29.0dip" app:layout_constraintBottom_toTopOf="@id/view_line" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/text_black_color" android:id="@id/tv_plant_filter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="14.0dip" app:layout_constraintBottom_toBottomOf="@id/cb_plant_filter" app:layout_constraintStart_toEndOf="@id/cb_plant_filter" app:layout_constraintTop_toTopOf="@id/cb_plant_filter" />
+    <View android:id="@id/view_line" android:layout_marginTop="26.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cb_plant_filter" style="@style/LineStyle" />
+</android.support.constraint.ConstraintLayout>

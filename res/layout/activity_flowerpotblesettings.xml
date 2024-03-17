@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:hhcc="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/PageContentTranslateStyle">
+        <include layout="@layout/layout_titlebar" />
+        <RelativeLayout android:layout_height="@dimen/app_item_height" style="@style/AboutItemStyle">
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:id="@id/blesettings_tv_battery_title" android:text="@string/activity_mydevice_battery" android:layout_marginStart="0.0dip" android:layout_alignParentStart="true" style="@style/TextViewStyleBlack14Common" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/app_color" android:id="@id/blesettings_tv_battery_day" android:text="@string/activity_mydevice_battery_value" android:layout_alignBaseline="@id/blesettings_tv_battery_title" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" android:layout_alignParentEnd="true" style="@style/TextViewStyleGray12Common" />
+            <ProgressBar android:id="@id/blesettings_pb_battery" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="6.0dip" android:progress="0" android:progressDrawable="@drawable/pb_app_color" android:layout_below="@id/blesettings_tv_battery_title" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+        </RelativeLayout>
+        <include layout="@layout/line" />
+        <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/si_check_firmware_update" android:layout_width="fill_parent" android:layout_height="wrap_content" hhcc:settingTitle="@string/activity_mydevice_firmware_update" hhcc:showArrow="true" hhcc:showRedPoint="false" />
+        <include layout="@layout/line" />
+    </LinearLayout>
+    <Button android:id="@id/blesettings_bt_delele_ble" android:text="@string/activity_mydevice_remove_device" android:layout_alignParentBottom="true" style="@style/ButtonStyleCommon" />
+</RelativeLayout>

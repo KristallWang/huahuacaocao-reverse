@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/growth_report_light_tip_title1" style="@style/TextViewStyleBlack14Common" />
+    <TextView android:layout_marginBottom="@dimen/app_marge_32" android:text="@string/growth_report_light_tip_content1" style="@style/TextViewStyleGray12Common" />
+    <TextView android:text="@string/growth_report_light_tip_title2" style="@style/TextViewStyleBlack14Common" />
+    <TextView android:text="@string/growth_report_light_tip_content2" style="@style/TextViewStyleGray12Common" />
+</LinearLayout>

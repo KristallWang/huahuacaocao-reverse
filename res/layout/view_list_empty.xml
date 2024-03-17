@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:id="@id/view_list_empty_ll_tip" style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_list_empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:src="@mipmap/img_res_not_found" />
+    <TextView android:gravity="center" android:id="@id/view_list_empty_tv_msg" android:layout_marginTop="@dimen/app_marge_16" android:text="@string/no_data" style="@style/TextViewStyleGray12Common" />
+    <Button android:gravity="center" android:id="@id/view_list_empty_bt_event" android:layout_width="160.0dip" android:layout_marginTop="@dimen/app_marge_16" android:text="@string/activity_handaddflower_suggest_tip_a" style="@style/AppButtonStyle" />
+</LinearLayout>

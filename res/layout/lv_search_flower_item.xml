@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_80">
+        <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/search_flower_item_iv_icon" android:layout_width="@dimen/height_portrait_small" android:layout_height="@dimen/height_portrait_small" android:layout_marginLeft="@dimen/app_marge_16" android:layout_marginRight="@dimen/app_marge_16" fresco:roundAsCircle="true" fresco:roundingBorderColor="@android:color/white" fresco:roundingBorderWidth="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/textsize_13" android:textColor="@color/textcolor_normal" android:gravity="center_vertical" android:id="@id/search_flower_item_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:gravity="center_vertical" android:id="@id/search_flower_item_tv_alias" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="alias" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/line" />
+</LinearLayout>

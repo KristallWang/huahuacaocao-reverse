@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/switchplant_rel_lv" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/switchplant_lv_flowers" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/ListViewStyle" />
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/switchplant_rel_tip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_weak" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_switchplant_no_history_tip" />
+                <Button android:id="@id/switchplant_btn_add_plant" android:layout_width="150.0dip" android:text="@string/button_add_plant" style="@style/ButtonStyleCommon" />
+            </LinearLayout>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </FrameLayout>
+</LinearLayout>

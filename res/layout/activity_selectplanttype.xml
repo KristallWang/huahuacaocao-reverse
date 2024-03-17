@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar_pure_text" />
+    <ListView android:id="@id/selectplanttype_lv_planttype" android:layout_height="fill_parent" android:layout_marginTop="@dimen/app_page_marge" android:listSelector="@color/transparent" android:dividerHeight="@dimen/app_page_marge" style="@style/ListViewStyle" />
+</LinearLayout>

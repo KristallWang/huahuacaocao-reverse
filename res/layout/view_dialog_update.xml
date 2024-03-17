@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_dialog_white_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/dialog_update_iv_banner" android:layout_width="fill_parent" android:layout_height="160.0dip" android:src="@mipmap/img_low_power" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/dialog_update_iv_cancel" android:padding="@dimen/app_marge_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_btn_cancel" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/textcolor_white" android:layout_gravity="center_horizontal" android:id="@id/dialog_update_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_marge_20" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/app_marge_20" android:text="" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/app_marge_10" android:paddingBottom="@dimen/app_marge_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/app_marge_14" android:paddingEnd="@dimen/app_marge_14">
+        <TextView android:textSize="@dimen/textsize_14" android:textStyle="bold" android:textColor="@color/app_color" android:id="@id/dialog_update_tv_update_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/app_marge_10" android:text="" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/app_color" android:id="@id/dialog_update_tv_date_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_update_date" android:layout_below="@id/dialog_update_tv_update_percent" android:layout_marginStart="@dimen/app_marge_16" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/app_color" android:id="@id/dialog_update_tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignTop="@id/dialog_update_tv_date_title" android:layout_toEndOf="@id/dialog_update_tv_date_title" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/app_color" android:id="@id/dialog_update_tv_version_name_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_5" android:text="@string/dialog_update_version" android:layout_below="@id/dialog_update_tv_date_title" android:layout_marginStart="@dimen/app_marge_16" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/app_color" android:id="@id/dialog_update_tv_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignTop="@id/dialog_update_tv_version_name_title" android:layout_toEndOf="@id/dialog_update_tv_version_name_title" />
+    </RelativeLayout>
+    <include layout="@layout/line" />
+    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_16" android:text="@string/dialog_update_content" android:lineSpacingMultiplier="1.5" android:paddingStart="@dimen/app_marge_14" android:paddingEnd="@dimen/app_marge_14" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="100.0dip" android:overScrollMode="never" android:paddingStart="@dimen/app_marge_14" android:paddingEnd="@dimen/app_marge_14">
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:id="@id/dialog_update_tv_changelog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lineSpacingMultiplier="1.5" />
+    </ScrollView>
+    <Button android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/dialog_update_btn_update" android:text="@string/button_update" style="@style/ButtonStyleCommonGrayStrokeSingleWidth" />
+</LinearLayout>

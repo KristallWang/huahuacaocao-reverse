@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <LinearLayout style="@style/PageContentStyle">
+        <LinearLayout android:orientation="vertical" android:id="@id/advanced_search_plant_result_ll_result_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/advanced_search_plant_result_tv_sum" android:text="已为您筛出以下 0 种植物" android:layout_marginStart="@dimen/app_marge_10" style="@style/TextViewStyleGray14Common" />
+            <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refreshLayout" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <GridView android:id="@id/advanced_search_plant_result_gv_result" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:horizontalSpacing="@dimen/app_marge_2" android:verticalSpacing="@dimen/app_marge_2" android:numColumns="3" android:layout_weight="1.0" android:overScrollMode="never" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+            </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+            <TextView android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_line_height" android:layout_marginTop="@dimen/app_marge_2" android:layout_marginStart="@dimen/app_page_marge" android:layout_marginEnd="@dimen/app_page_marge" />
+            <TextView android:textColor="@color/app_color" android:gravity="center_vertical" android:id="@id/advanced_search_plant_result_tv_other" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_40" android:text="其他相似植物0种>" android:layout_alignParentBottom="true" style="@style/TextViewStyleWhite14Common" />
+        </LinearLayout>
+        <include layout="@layout/view_list_empty" />
+    </LinearLayout>
+</LinearLayout>

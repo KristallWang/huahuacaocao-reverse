@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/app_marge_14" android:paddingTop="@dimen/app_marge_14" android:paddingRight="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/app_item_height_80"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/message_item_civ_userphoto" android:layout_width="@dimen/height_portrait_small" android:layout_height="@dimen/height_portrait_small" android:layout_marginRight="@dimen/app_marge_14" fresco:roundAsCircle="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/message_item_civ_userphoto">
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/message_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginBottom="@dimen/app_marge_5" android:maxWidth="130.0dip" android:text="义工是个字看看够不够" android:lines="1" />
+        <TextView android:textColor="@color/text_gary_color" android:id="@id/message_item_time" android:layout_marginRight="0.0dip" android:text="一个小时前" android:layout_alignParentRight="true" style="@style/TextViewStyleGray14" />
+        <TextView android:id="@id/message_item_notifi_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginRight="0.0dip" android:text="花花草草通知您,您的花好像需要浇水了" android:layout_below="@id/message_item_time" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="@style/TextViewStyleGray14" />
+    </RelativeLayout>
+</RelativeLayout>

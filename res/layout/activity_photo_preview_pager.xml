@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huahuacaocao.flowercare.view.HackyViewPager android:id="@id/photopager_hvp" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_bar" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="@dimen/layout_titlebar_height">
+        <ImageView android:layout_gravity="center|left" android:id="@id/title_bar_return" android:paddingLeft="@dimen/std_titlebar_margin_left_right" android:paddingRight="@dimen/std_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/titlebar_back" android:scaleType="center" />
+        <TextView android:textSize="@dimen/title_bar_text_size" android:textColor="@color/text_black_color" android:ellipsize="end" android:layout_gravity="center" android:id="@id/photo_preview_title_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" android:layout_weight="1.0" />
+        <Button android:textColor="@color/text_black_color" android:id="@id/photo_preview_title_btn" android:background="@drawable/hhcc_common_white_border_tranp_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_10" android:layout_marginBottom="@dimen/app_marge_10" android:text="(0/9)" android:layout_marginEnd="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/photo_preview_bottom_layout" android:background="@color/app_content_color" android:paddingTop="@dimen/app_marge_5" android:paddingBottom="@dimen/app_marge_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:id="@id/photo_preview_original_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <android.support.v7.widget.AppCompatCheckBox android:theme="@style/MyCheckBox" android:enabled="true" android:textColor="@color/text_black_color" android:id="@id/photo_preview_original" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原图()" android:paddingEnd="10.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/photo_preview_check_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <android.support.v7.widget.AppCompatCheckBox android:theme="@style/MyCheckBox" android:enabled="true" android:id="@id/photo_preview_checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="10.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

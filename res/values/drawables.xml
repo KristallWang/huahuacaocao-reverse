@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="common_list_item_pressed">#ff3fb57d</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="sh_main">#ffe2e2e3</item>
+    <item type="drawable" name="transparent">#00ffffff</item>
+    <item type="drawable" name="white">#ffffffff</item>
+</resources>

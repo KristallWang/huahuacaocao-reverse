@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentWhiteStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <include layout="@layout/view_search_title" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/community_search_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center_vertical" android:id="@id/community_search_tv_user" android:visibility="gone" android:layout_height="@dimen/app_item_height_40" android:text="用户" style="@style/TextViewStyleGray14Common" />
+            <View android:id="@id/community_search_line1" android:visibility="gone" style="@style/hor_line_style" />
+            <android.support.v7.widget.RecyclerView android:id="@id/community_search_user_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:gravity="center" android:id="@id/community_search_tv_user_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_40" android:text="查看更多用户" android:drawableRight="@mipmap/img_home_item_arrow_right" style="@style/TextViewStyleGray14Common" />
+            <View android:id="@id/community_search_line2" android:background="@color/app_content_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <TextView android:gravity="center_vertical" android:id="@id/community_search_tv_post" android:visibility="gone" android:layout_height="@dimen/app_item_height_40" android:text="首页帖子" style="@style/TextViewStyleGray14Common" />
+            <View android:id="@id/community_search_line3" style="@style/hor_line_style" />
+            <android.support.v7.widget.RecyclerView android:id="@id/community_search_post_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:gravity="center" android:id="@id/community_search_tv_post_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_40" android:text="查看更多帖子记录" android:drawableRight="@mipmap/img_home_item_arrow_right" style="@style/TextViewStyleGray14Common" />
+            <View android:id="@id/community_search_line4" android:visibility="gone" style="@style/hor_line_style" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/view_list_empty_community" />
+</LinearLayout>

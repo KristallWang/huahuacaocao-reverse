@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/alert_dialog_root" android:background="@color/dialog_muenu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_32">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_strong" android:id="@id/alert_dialog_tv_state_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="土壤肥力" android:layout_centerInParent="true" android:layout_marginEnd="4.0dip" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:id="@id/alert_dialog_tv_state_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" android:layout_toRightOf="@id/alert_dialog_tv_state_name" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/textsize_12" android:id="@id/alert_dialog_tv_state_qa" android:layout_marginTop="@dimen/app_marge_16" android:text="" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/app_marge_14" style="@style/TextViewStyleGray14Common" />
+    </RelativeLayout>
+    <TextView android:textSize="44.0sp" android:textColor="@color/text_red_color" android:layout_gravity="center" android:id="@id/alert_dialog_tv_state_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_10" android:layout_marginBottom="@dimen/app_marge_10" android:text="5" />
+    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:layout_gravity="center" android:id="@id/alert_dialog_tv_state_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前肥力不足，请给我加点肥料吧" android:minLines="2" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" />
+    <Button android:id="@id/alert_dialog_bt_ok" android:visibility="gone" android:text="知道啦" style="@style/ButtonStyleCommonGrayStrokeGreenText" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/alert_dialog_ll_left_right" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_page_marge" android:layoutDirection="ltr">
+        <Button android:textSize="@dimen/textsize_12" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/alert_dialog_bt_left" android:background="@drawable/common_button_left" android:text="知道啦" android:maxLines="2" android:layout_weight="1.0" android:layoutDirection="ltr" android:layout_marginEnd="0.0dip" style="@style/ButtonStyleCommonGrayStrokeGreenText" />
+        <Button android:textSize="@dimen/textsize_12" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/alert_dialog_bt_right" android:background="@drawable/common_button_right" android:text="去商城看看" android:maxLines="2" android:layout_weight="1.0" android:layoutDirection="ltr" android:layout_marginStart="0.0dip" style="@style/ButtonStyleCommonGrayStrokeGreenText" />
+    </LinearLayout>
+</LinearLayout>

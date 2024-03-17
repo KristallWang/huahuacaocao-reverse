@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/curve_vpb_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_growth_curve_chart_details_iv_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginBottom="@dimen/app_marge_5" android:src="@mipmap/img_home_state_water" />
+    <TextView android:gravity="center_vertical" android:id="@id/view_growth_curve_chart_details_tv_param" android:layout_height="24.0dip" android:layout_margin="@dimen/app_marge_5" android:text="水分" android:layout_toRightOf="@id/view_growth_curve_chart_details_iv_icon" style="@style/TextViewStyleGray14Common" />
+    <TextView android:gravity="center_vertical" android:id="@id/view_growth_curve_chart_details_tv_param_state" android:layout_height="24.0dip" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginBottom="@dimen/app_marge_5" android:text="" android:layout_toRightOf="@id/view_growth_curve_chart_details_tv_param" android:layout_marginStart="0.0dip" style="@style/TextViewStyleBlack14Common" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_growth_curve_chart_details_iv_icon">
+        <TextView android:id="@id/view_growth_curve_chart_details_tv_high" android:text="1111\n2222222" style="@style/ChartDetailsTextViewStyle" />
+        <TextView android:id="@id/view_growth_curve_chart_details_tv_line" android:background="@color/line_color" android:layout_width="@dimen/app_line_height" android:layout_height="fill_parent" android:layout_marginTop="@dimen/app_marge_32" android:layout_marginBottom="@dimen/app_marge_32" />
+        <TextView android:id="@id/view_growth_curve_chart_details_tv_low" android:text="1111\n2222222" style="@style/ChartDetailsTextViewStyle" />
+        <TextView android:background="@color/line_color" android:layout_width="@dimen/app_line_height" android:layout_height="fill_parent" android:layout_marginTop="@dimen/app_marge_32" android:layout_marginBottom="@dimen/app_marge_32" />
+        <TextView android:id="@id/view_growth_curve_chart_details_tv_good" android:text="1111\n2222222" style="@style/ChartDetailsTextViewStyle" />
+    </LinearLayout>
+</RelativeLayout>

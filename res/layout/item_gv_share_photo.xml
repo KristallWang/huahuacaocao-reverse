@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/lv_share_photo_item_iv_img" android:layout_width="@dimen/app_item_icon_80" android:layout_height="@dimen/app_item_icon_80" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/lv_share_photo_item_iv_check" android:padding="@dimen/app_marge_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_checked" android:layout_alignEnd="@id/lv_share_photo_item_iv_img" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <android.support.v7.widget.AppCompatEditText android:textSize="15.0sp" android:textColorHint="@color/text_gray_color_invalidate" android:id="@id/et_group_name" android:padding="@dimen/app_marge_10" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="@dimen/app_marge_10" android:layout_marginRight="22.0dip" android:hint="请输入分组名称" android:singleLine="true" android:maxLength="20" android:imeOptions="actionSearch" style="@style/EditTextStyle" />
+    <Button android:id="@id/bt_save_group_name" android:background="@drawable/btn_app_color_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="22.0dip" android:text="@string/common_button_save" />
+</LinearLayout>

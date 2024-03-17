@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:layout_gravity="bottom" android:id="@id/lv_add_photo_item_iv_img" android:layout_width="@dimen/app_item_icon_80" android:layout_height="@dimen/app_item_icon_80" fresco:roundedCornerRadius="3.0dip" fresco:roundingBorderColor="@color/line_color" fresco:roundingBorderWidth="0.5dip" />
+    <ImageView android:layout_gravity="right" android:id="@id/lv_add_photo_item_iv_del" android:paddingBottom="@dimen/app_page_marge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_fail" android:paddingStart="@dimen/app_page_marge" />
+</FrameLayout>

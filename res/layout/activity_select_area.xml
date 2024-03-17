@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include android:id="@id/title" layout="@layout/layout_titlebar_pure_text" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_area_select" android:paddingLeft="@dimen/app_marge_16" android:paddingRight="@dimen/app_marge_16" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/ll_protocol" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/title" app:layout_constraintVertical_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_protocol" android:padding="@dimen/app_marge_10" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/rv_area_select">
+            <ImageView android:id="@id/iv_protocol_ischecked" android:padding="@dimen/app_marge_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/disagreelimit" />
+            <TextView android:textSize="@dimen/font_size_6" android:textColor="#ff3f87dd" android:layout_gravity="center_horizontal" android:id="@id/tv_agreement" android:padding="@dimen/app_marge_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_marge_16" android:text="@string/gdpr.read.terms.privacypolicy" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/line_tv_line" android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_line_height" android:layout_marginTop="@dimen/app_marge_32" android:layout_marginStart="@dimen/app_page_marge" android:layout_marginEnd="@dimen/app_page_marge" />
+</merge>

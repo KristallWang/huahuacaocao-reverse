@@ -1,0 +1,63 @@
+version: 2.9.3
+apkFileName: Flower Care_3.4.2_Apkpure.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 19
+  targetSdkVersion: 30
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 10144
+  versionName: 3.4.2
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  functions_da.properties: 8
+  play-services-base.properties: 8
+  androidsupportmultidexversion.txt: 8
+  firebase-measurement-connector.properties: 8
+  play-services-flags.properties: 8
+  functions_es.properties: 8
+  miui_push_version: 8
+  firebase-auth.properties: 8
+  firebase-iid-interop.properties: 8
+  play-services-auth.properties: 8
+  play-services-tasks.properties: 8
+  mailcap.default: 8
+  firebase-iid.properties: 8
+  firebase-auth-interop.properties: 8
+  firebase-common.properties: 8
+  play-services-stats.properties: 8
+  functions_fr.properties: 8
+  play-services-measurement-base.properties: 8
+  play-services-auth-api-phone.properties: 8
+  firebase-core.properties: 8
+  play-services-ads-identifier.properties: 8
+  functions.properties: 8
+  functions_en.properties: 8
+  functions_nl.properties: 8
+  firebase-analytics.properties: 8
+  push_version: 8
+  play-services-auth-base.properties: 8
+  firebase-analytics-impl.properties: 8
+  play-services-measurement-api.properties: 8
+  mimetypes.default: 8
+  firebase-measurement-connector-impl.properties: 8
+  functions_de.properties: 8
+  play-services-basement.properties: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 8
+  org/apache/harmony/awt/internal/nls/messages.properties: 8
+  generated-sources/com/twitter/TldLists.java: 8
+doNotCompress:
+- resources.arsc
+- png
+- gif
+- webp
+- jpg
+- ogg

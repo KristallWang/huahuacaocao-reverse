@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:layout_width="28.0dip" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center_horizontal" android:background="@color/line_color" android:layout_width="@dimen/app_line_height" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="@dimen/app_marge_10" android:src="@drawable/shape_dot_selected" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginEnd="@dimen/app_marge_14">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/growthdiary_item_tv_date" android:background="@drawable/shape_gray_radius" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="visible" android:text="2016.3.10" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="0.0dip" android:layout_alignParentStart="true" style="@style/TextViewStyleGray14Common" />
+            <ImageView android:id="@id/growthdiary_item_iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_delete" android:layout_centerVertical="true" android:paddingStart="@dimen/app_marge_5" android:paddingEnd="@dimen/app_marge_5" android:layout_alignParentEnd="true" />
+            <ImageView android:id="@id/growthdiary_item_iv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_diary_share" android:layout_centerVertical="true" android:paddingStart="@dimen/app_marge_10" android:paddingEnd="@dimen/app_marge_10" android:layout_toStartOf="@id/growthdiary_item_iv_delete" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_normal" android:id="@id/growthdiary_item_tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_page_marge" android:text="aaa" android:lineSpacingMultiplier="1.2" />
+        <com.huahuacaocao.flowercare.view.multiimage.MultiImageView android:id="@id/growthdiary_item_miv_imglist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_page_marge" android:layout_marginEnd="@dimen/app_page_marge" />
+    </LinearLayout>
+</LinearLayout>

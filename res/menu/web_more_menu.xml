@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/web_menu_share_comment" android:id="@id/web_menu_share_comment" android:title="分享到社区" />
+    <item android:icon="@mipmap/web_menu_copy_url" android:id="@id/web_menu_copy_url" android:title="复制链接" />
+    <item android:icon="@mipmap/web_menu_open_borwer" android:id="@id/web_menu_open_borwer" android:title="在浏览器打开" />
+    <item android:icon="@mipmap/web_menu_open_refersh" android:id="@id/web_menu_open_refersh" android:title="刷新" />
+</menu>

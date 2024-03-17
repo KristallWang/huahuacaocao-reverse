@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <com.huahuacaocao.flowercare.view.settting.ListSettingView android:id="@id/usercenter_lsv_my_community" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

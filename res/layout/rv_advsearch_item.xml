@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huahuacaocao.flowercare.view.CheckableFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/advsearch_item_iv_src" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/img_no_photos" android:scaleType="fitXY" />
+        <CheckBox android:id="@id/advsearch_item_cb_cover" android:background="@drawable/plantadvsearch_choice_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:button="@null" />
+    </com.huahuacaocao.flowercare.view.CheckableFrameLayout>
+</FrameLayout>

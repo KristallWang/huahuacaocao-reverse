@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/base_ui_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.miot.service.common.widget.PieProgressBar android:id="@id/base_ui_progress_bar" android:background="@drawable/kuailian_progress_filled_not" android:layout_width="83.29999dip" android:layout_height="83.29999dip" android:src="@drawable/kuailian_progress_filled" />
+        <TextView android:textSize="@dimen/font_size_0" android:textColor="@color/class_text_24" android:layout_gravity="center" android:id="@id/base_ui_progress_bar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/class_text_20" android:layout_gravity="center_horizontal" android:id="@id/base_ui_progress_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.769989dip" android:singleLine="true" />
+</LinearLayout>

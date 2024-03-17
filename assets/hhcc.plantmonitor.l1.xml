@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-mi-com:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <device>
+
+        <type>urn:schemas-mi-com:device:HHCC:growcare:1</type>
+        <friendlyName>花花草草监测仪</friendlyName>
+        <firmwareVersion>1</firmwareVersion>
+        <modelNumber>956</modelNumber>
+        <modelName>hhcc.plantmonitor.l1</modelName>
+        <modelDescription>花花草草监测仪</modelDescription>
+        <modelURL>http://www.com.com</modelURL>
+        <manufacturer>Xiaomi</manufacturer>
+        <manufacturerURL>http://www.mi.com</manufacturerURL>
+
+        <serviceList>
+            <service>
+                <type>urn:schemas-mi-com:service:HHCC:Service:1</type>
+                <description></description>
+
+                <propertyList>
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>Humidity</friendlyName>
+                        <internalName>humidity</internalName>
+                        <description>湿度</description>
+                        <dataType>int</dataType>
+                        <allowedValueRange>
+                            <minimum>0</minimum>
+                            <maximum>100</maximum>
+                        </allowedValueRange>
+                    </property>
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>Light</friendlyName>
+                        <internalName>light</internalName>
+                        <description>亮度</description>
+                        <dataType>int</dataType>
+                        <allowedValueRange>
+                            <minimum>0</minimum>
+                            <maximum>140000</maximum>
+                        </allowedValueRange>
+                    </property>
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>Temperature</friendlyName>
+                        <internalName>temperature</internalName>
+                        <description>温度</description>
+                        <dataType>int</dataType>
+                        <allowedValueRange>
+                            <minimum>-20</minimum>
+                            <maximum>60</maximum>
+                        </allowedValueRange>
+                    </property>
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>EC</friendlyName>
+                        <internalName>ec</internalName>
+                        <description>肥力</description>
+                        <dataType>int</dataType>
+                        <allowedValueRange>
+                            <minimum>0</minimum>
+                            <maximum>3000</maximum>
+                        </allowedValueRange>
+                    </property>
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>Battery</friendlyName>
+                        <internalName>battery</internalName>
+                        <description>电池电量</description>
+                        <dataType>int</dataType>
+                        <allowedValueRange>
+                            <minimum>0</minimum>
+                            <maximum>100</maximum>
+                        </allowedValueRange>
+                    </property>
+                </propertyList>
+
+                <actionList>
+
+                </actionList>
+            </service>
+        </serviceList>
+    </device>
+</root>

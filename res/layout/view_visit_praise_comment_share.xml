@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/comm_topic_item_tv_view" android:text="" android:drawableLeft="@mipmap/img_comm_view" style="@style/VisitPraiseCommentShareStyle" />
+    </FrameLayout>
+    <View style="@style/VerticalLineStyle" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/comm_topic_item_praise_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/comm_topic_item_iv_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_praise_like" />
+        <TextView android:id="@id/comm_topic_item_tv_praise_num" android:layout_marginLeft="@dimen/app_marge_5" style="@style/VisitPraiseCommentShareStyle" />
+    </LinearLayout>
+    <View style="@style/VerticalLineStyle" />
+    <FrameLayout android:id="@id/comm_topic_item_tv_comment_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/comm_topic_item_tv_comment" android:text="" android:drawableLeft="@mipmap/img_comm_comment" style="@style/VisitPraiseCommentShareStyle" />
+    </FrameLayout>
+    <View style="@style/VerticalLineStyle" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/comm_topic_item_iv_share" android:paddingTop="@dimen/app_marge_14" android:paddingBottom="@dimen/app_marge_14" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_comm_share" android:layout_weight="1.0" />
+</LinearLayout>

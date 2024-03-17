@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="150.0dip" android:layout_height="380.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/lv_advsearchplant_item_iv_species" android:layout_width="140.0dip" android:layout_height="380.0dip" android:src="@mipmap/img_advsearch_p1_1" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:gravity="center_horizontal" android:id="@id/lv_advsearchplant_item_tv_tips" android:padding="8.0dip" android:text="@string/advsearch_string_p2_3" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.94" style="@style/TextViewStyleWhite14Common" />
+    <ImageView android:id="@id/lv_advsearchplant_item_iv_selected" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="380.0dip" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

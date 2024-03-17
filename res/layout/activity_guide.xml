@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guide_iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <Button android:textColor="@color/textcolor_normal" android:layout_gravity="bottom|center" android:id="@id/guide_bt_finish" android:visibility="gone" android:text="@string/button_finish" style="@style/AppButtonStyle" />
+</FrameLayout>

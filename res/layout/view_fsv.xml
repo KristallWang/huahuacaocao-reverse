@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/fsv_fl_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip">
+            <ImageView android:id="@id/fsv_iv_icon_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_home_state_light_gray" />
+            <ImageView android:id="@id/fsv_iv_icon_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_home_state_light" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_weak" android:id="@id/fsv_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="标题" android:layout_toRightOf="@id/fsv_fl_icon" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_strong" android:id="@id/fsv_tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="状态" android:layout_toRightOf="@id/fsv_tv_title" android:layout_alignBaseline="@id/fsv_tv_title" />
+        <LinearLayout android:layout_width="58.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/fsv_fl_icon" android:layout_below="@id/fsv_tv_title">
+            <ImageView android:id="@id/fsv_iv_bar_low" android:layout_width="0.0dip" android:layout_height="4.0dip" android:layout_margin="1.0dip" android:src="@drawable/fsv_bar_gray" android:layout_weight="2.0" />
+            <ImageView android:id="@id/fsv_iv_bar_normal" android:layout_width="0.0dip" android:layout_height="4.0dip" android:layout_margin="1.0dip" android:src="@drawable/fsv_bar_gray" android:layout_weight="8.0" />
+            <ImageView android:id="@id/fsv_iv_bar_high" android:layout_width="0.0dip" android:layout_height="4.0dip" android:layout_margin="1.0dip" android:src="@drawable/fsv_bar_gray" android:layout_weight="2.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

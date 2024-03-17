@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huahuacaocao.flowercare.view.photopicker.SquareItemLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:layout_gravity="center" android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_stroke" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_photopicker_photo_bg" />
+    <ImageView android:id="@id/v_selected" android:padding="12.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_photopicker_checkbox_bg" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <TextView android:textColor="@color/white" android:id="@id/tv_photo_gif" android:background="@color/app_color" android:paddingLeft="@dimen/app_marge_2" android:paddingRight="@dimen/app_marge_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GIF" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</com.huahuacaocao.flowercare.view.photopicker.SquareItemLayout>

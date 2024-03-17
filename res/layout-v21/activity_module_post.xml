@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/layout_titlebar" />
+    <com.huahuacaocao.flowercare.view.VpSwipeRefreshLayout android:id="@id/swipe_container" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" fresco:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.design.widget.AppBarLayout android:id="@id/appbar_layout" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.CollapsingToolbarLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:contentScrim="@color/transparent" fresco:layout_scrollFlags="scroll|snap" fresco:statusBarScrim="@color/transparent" fresco:titleEnabled="false">
+                    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:layout_collapseMode="parallax" fresco:layout_collapseParallaxMultiplier="0.6" fresco:paddingEnd="0.0dip" fresco:paddingStart="0.0dip">
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/channel_post_title_iamge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:scaleType="centerCrop" fresco:viewAspectRatio="2.2" />
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#4c000000" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="180.0dip" android:layout_height="wrap_content">
+                                <TextView android:textSize="20.0sp" android:textColor="@color/textcolor_white" android:id="@id/channel_post_tv_title_ch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="--" />
+                                <include layout="@layout/line_full_width" />
+                                <TextView android:textSize="@dimen/textsize_10" android:textColor="@color/white" android:id="@id/channel_post_tv_title_en" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="--" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/channel_post_desc" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_marginTop="10.0dip" android:text="这里讨论关于多肉的一些话题的帖子,欢迎发帖" android:maxLines="2" style="@style/TextViewStyleGray14" />
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout> ​<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:layout_scrollFlags="enterAlways|scroll|snap">
+                    <com.zhy.view.flowlayout.TagFlowLayout android:id="@id/channel_post_tags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_page_marge" android:layout_marginRight="@dimen/app_page_marge" />
+                    <include layout="@layout/line" />
+                    <android.support.design.widget.TabLayout android:id="@id/channel_post_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_marge_14" android:layout_marginRight="@dimen/app_marge_14" fresco:tabGravity="fill" fresco:tabIndicatorHeight="2.0dip" fresco:tabMaxWidth="0.0dip" fresco:tabMode="fixed" fresco:tabSelectedTextColor="@color/app_color" fresco:tabTextColor="@color/text_gary_color" />
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+            <android.support.v4.view.ViewPager android:id="@id/channel_post_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/community_channel_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="26.0dip" android:layout_marginBottom="26.0dip" android:button="@null" android:src="@drawable/selector_pick_picture_in_bg" android:elevation="0.0dip" android:backgroundTint="@color/app_color" fresco:borderWidth="0.0dip" fresco:fabSize="normal" fresco:layout_behavior="com.huahuacaocao.flowercare.view.behavior.ScrollAwareFABBehavior" fresco:pressedTranslationZ="0.0dip" fresco:rippleColor="@color/app_color" />
+        </android.support.design.widget.CoordinatorLayout>
+    </com.huahuacaocao.flowercare.view.VpSwipeRefreshLayout>
+</RelativeLayout>

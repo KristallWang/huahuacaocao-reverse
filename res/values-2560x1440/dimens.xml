@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hab_bee_height">20.0dip</dimen>
+    <dimen name="hab_bee_width">20.0dip</dimen>
+    <dimen name="hab_left_grass_height">55.0dip</dimen>
+    <dimen name="hab_left_grass_width">78.0dip</dimen>
+    <dimen name="hab_left_pot_height">50.0dip</dimen>
+    <dimen name="hab_left_pot_width">65.0dip</dimen>
+    <dimen name="hab_right_grass_height">55.0dip</dimen>
+    <dimen name="hab_right_grass_width">48.0dip</dimen>
+    <dimen name="hab_right_pot_height">50.0dip</dimen>
+    <dimen name="hab_right_pot_width">50.0dip</dimen>
+</resources>

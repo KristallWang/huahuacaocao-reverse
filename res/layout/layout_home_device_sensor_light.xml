@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/flowercare_home_sensor_light_layout" android:layout_width="fill_parent" android:layout_height="@dimen/flower_care_item_height" android:layout_marginTop="@dimen/app_marge_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/flowercare_home_info_layout_light" style="@style/FlowerCareHomeTabStyle">
+        <TextView android:id="@id/flowercare_home_info_tv_light" android:text="@string/activity_home_state_light" app:layout_constraintBottom_toTopOf="@id/flowercare_home_info_tv_light_en" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" style="@style/FlowerCareTextParamNameStyle" />
+        <TextView android:id="@id/flowercare_home_info_tv_light_en" android:text="Light Intensity" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/flowercare_home_info_tv_light" style="@style/FlowerCareTextParamEnNameStyle" />
+        <ImageView android:id="@id/flowercare_home_info_iv_light_alarm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/flower_alarm_up" app:layout_constraintBottom_toTopOf="@id/flowercare_home_info_tv_light_range" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/flowercare_home_info_tv_light_num" />
+        <TextView android:id="@id/flowercare_home_info_tv_light_num" app:layout_constraintBottom_toTopOf="@id/flowercare_home_info_tv_light_range" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" style="@style/FlowerCareTextParamValueStyle" />
+        <TextView android:id="@id/flowercare_home_info_tv_light_range" android:text="-- (lux)" android:layout_marginEnd="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="@id/flowercare_home_info_tv_light_num" app:layout_constraintTop_toBottomOf="@id/flowercare_home_info_tv_light_num" style="@style/FlowerCareTextParamEnNameStyle" />
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/flowercare_home_info_layout_light_back" android:paddingBottom="@dimen/app_marge_5" android:visibility="gone" style="@style/FlowerCareHomeTabStyle">
+        <TextView android:textColor="@color/text_green_color" android:id="@id/flowercare_home_info_tv_light_warning_ask" android:layout_margin="0.0dip" android:text="@string/dialog_state_qa_light" android:drawablePadding="@dimen/app_marge_5" android:drawableStart="@mipmap/flower_care_tip_light" style="@style/TextViewStyleGray12Common" />
+        <TextView android:id="@id/flowercare_home_info_tv_light_warning_msg" android:text="－－" style="@style/FlowerCareTextWarningStyle" />
+    </LinearLayout>
+</FrameLayout>

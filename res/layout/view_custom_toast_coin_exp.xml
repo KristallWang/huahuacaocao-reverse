@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_custom_toast_bg" android:padding="@dimen/app_marge_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/textcolor_normal" android:id="@id/custom_toast_tv_exp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+5经验" android:drawableLeft="@mipmap/icon_toast_exp" android:drawablePadding="@dimen/app_marge_5" />
+    <TextView android:textColor="@color/textcolor_normal" android:id="@id/custom_toast_tv_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_marge_10" android:text="+2花币" android:drawableLeft="@mipmap/icon_toast_coin" android:drawablePadding="@dimen/app_marge_5" />
+</LinearLayout>

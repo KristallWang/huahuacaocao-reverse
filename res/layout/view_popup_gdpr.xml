@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/pop_selectarea_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff999999" android:gravity="center" android:background="@color/white" android:padding="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gdpr.choosse.country" />
+    <View android:layout_marginStart="@dimen/dp_0" android:layout_marginEnd="@dimen/dp_0" style="@style/LineStyle" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_pop_are_select" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="180.0dip" />
+    <TextView android:textSize="@dimen/textsize_10" android:background="@color/white" android:padding="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gdpr.save.data" android:maxLines="2" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_protocol_ischecked" android:padding="@dimen/app_marge_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/disagreelimit" />
+        <TextView android:textSize="@dimen/font_size_6" android:textColor="#ff3f87dd" android:layout_gravity="center" android:id="@id/tv_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_marge_16" android:text="@string/gdpr.read.terms.privacypolicy" />
+    </LinearLayout>
+</LinearLayout>

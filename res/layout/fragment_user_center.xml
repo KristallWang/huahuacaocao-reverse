@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar" />
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/bga_refersh" android:focusable="true" android:focusableInTouchMode="true" style="@style/PageContentTranslateStyle">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_horizontal" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/usercenter_civ_user_photo" android:layout_width="@dimen/app_item_height_80" android:layout_height="@dimen/app_item_height_80" android:layout_marginTop="27.0dip" android:layout_centerHorizontal="true" fresco:failureImage="@mipmap/img_no_photos" fresco:placeholderImage="@mipmap/img_no_photos" fresco:roundAsCircle="true" fresco:roundingBorderColor="@color/line_color" fresco:roundingBorderWidth="1.0dip" />
+                    <TextView android:textSize="@dimen/textsize_16" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/usercenter_tv_user_name" android:layout_width="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="27.0dip" android:text="--" android:layout_below="@id/usercenter_civ_user_photo" android:textDirection="anyRtl" style="@style/TextViewStyleGray14Common" />
+                </RelativeLayout>
+                <TextView android:background="@color/color_split_line" android:layout_width="fill_parent" android:layout_height="@dimen/app_marge_14" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/usercenter_si_qa" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:settingTitle="@string/fragment_usercenter_menu_faq" fresco:showArrow="true" fresco:showRedPoint="false" fresco:showTitleIcon="true" fresco:titleIconSrc="@mipmap/img_user_center_qa" />
+                    <include layout="@layout/line" />
+                    <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/usercenter_si_rank" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:settingTitle="@string/fragment_usercenter_menu_rate" fresco:showArrow="true" fresco:showRedPoint="false" fresco:showTitleIcon="true" fresco:titleIconSrc="@mipmap/img_user_center_rank" />
+                    <TextView android:id="@id/line_rate_us" android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_line_height" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" />
+                    <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/usercenter_si_useragreement" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:settingTitle="@string/fragment_usercenter_menu_user_agreement" fresco:showArrow="true" fresco:showRedPoint="false" fresco:showTitleIcon="true" fresco:titleIconSrc="@mipmap/img_user_center_user_agreement" />
+                    <TextView android:id="@id/line_user_agreement" android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_line_height" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" />
+                    <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/usercenter_si_about" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:settingTitle="@string/fragment_usercenter_menu_about" fresco:showArrow="true" fresco:showRedPoint="false" fresco:showTitleIcon="true" fresco:titleIconSrc="@mipmap/img_user_center_about" />
+                    <include layout="@layout/line" />
+                    <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/usercenter_si_switch_language" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:desc="@string/switch_language_auto" fresco:settingTitle="@string/fragment_usercenter_menu_language" fresco:showArrow="true" fresco:showRedPoint="false" fresco:showTitleIcon="true" fresco:titleIconSrc="@mipmap/img_user_center_language" />
+                    <TextView android:id="@id/line_switch_language" android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="@dimen/app_line_height" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" />
+                    <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/usercenter_si_clearcache" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:settingTitle="@string/fragment_usercenter_menu_clear_cache" fresco:showArrow="true" fresco:showRedPoint="false" fresco:showTitleIcon="true" fresco:titleIconSrc="@mipmap/img_user_center_clear_cache" />
+                    <include layout="@layout/line" />
+                    <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/change_area" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:settingTitle="@string/gdpr.switch.country" fresco:showArrow="true" fresco:showRedPoint="false" fresco:showTitleIcon="true" fresco:titleIconSrc="@mipmap/icon_area" />
+                    <include layout="@layout/line" />
+                    <com.huahuacaocao.flowercare.view.SettingItem android:id="@id/delete_data" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:settingTitle="@string/gdpr.download.or.delete.data" fresco:showArrow="true" fresco:showRedPoint="false" fresco:showTitleIcon="true" fresco:titleIconSrc="@mipmap/icon_database" />
+                    <include layout="@layout/line" />
+                    <RelativeLayout android:background="@drawable/common_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height">
+                        <TextView android:text="@string/fragment_usercenter_menu_temp_switch" android:drawablePadding="@dimen/app_marge_14" android:layout_centerVertical="true" android:drawableStart="@mipmap/img_user_center_temp_switch" android:layout_marginStart="@dimen/app_page_marge" style="@style/TextViewStyleGray12Common" />
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/usercenter_rg_temp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/app_page_marge" android:layout_alignParentEnd="true">
+                            <android.support.v7.widget.AppCompatRadioButton android:textSize="@dimen/textsize_16" android:textColor="@color/selector_main_tab_color" android:id="@id/usercenter_arb_temp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="℃" />
+                            <android.support.v7.widget.AppCompatRadioButton android:textSize="@dimen/textsize_16" android:textColor="@color/selector_main_tab_color" android:id="@id/usercenter_arb_temp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="℉" android:layout_marginStart="@dimen/app_page_marge" />
+                        </RadioGroup>
+                    </RelativeLayout>
+                    <include layout="@layout/line" />
+                    <RelativeLayout android:id="@id/usercenter_rl_light" android:background="@drawable/common_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height">
+                        <TextView android:text="@string/fragment_usercenter_menu_light_switch" android:drawablePadding="@dimen/app_marge_14" android:layout_centerVertical="true" android:drawableStart="@mipmap/img_user_center_light_switch" android:layout_marginStart="@dimen/app_page_marge" style="@style/TextViewStyleGray12Common" />
+                        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/usercenter_rg_light" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/app_page_marge" android:layout_alignParentEnd="true">
+                            <android.support.v7.widget.AppCompatRadioButton android:textSize="@dimen/textsize_16" android:textColor="@color/selector_main_tab_color" android:id="@id/usercenter_arb_light1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LUX" />
+                            <android.support.v7.widget.AppCompatRadioButton android:textSize="@dimen/textsize_16" android:textColor="@color/selector_main_tab_color" android:id="@id/usercenter_arb_light2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAR" android:layout_marginStart="@dimen/app_page_marge" />
+                        </RadioGroup>
+                    </RelativeLayout>
+                    <include layout="@layout/line" />
+                    <Button android:id="@id/usercenter_btn_quit" android:text="@string/button_logout" style="@style/ButtonStyleCommonGrayStrokeRedText" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

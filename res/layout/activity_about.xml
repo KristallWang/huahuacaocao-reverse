@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar" />
+    <LinearLayout style="@style/PageContentTranslateStyle">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PageContentTranslateStyle">
+            <com.huahuacaocao.hhcc_common.base.view.CircleImageView android:id="@id/about_civ_logo" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_marginTop="40.0dip" android:src="@mipmap/app_icon" android:contentDescription="@string/app_name" app:civ_radius="@dimen/app_marge_5" app:civ_style_circle="false" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_normal" android:text="@string/app_name" style="@style/TextViewStyleGray14Common" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:id="@id/about_tv_version" android:layout_marginTop="0.0dip" android:layout_marginBottom="40.0dip" android:text="@string/common_dash" style="@style/TextViewStyleGray14Common" />
+        </LinearLayout>
+        <include layout="@layout/line" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_our_emial" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/AboutItemStyle">
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/activity_about_weixin_title" android:drawablePadding="@dimen/app_page_marge" android:drawableStart="@mipmap/img_about_wechat" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:ellipsize="end" android:id="@id/about_tv_facebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_about_weixin_value" android:lines="1" android:singleLine="true" />
+                </LinearLayout>
+                <include layout="@layout/line" />
+                <LinearLayout style="@style/AboutItemStyle">
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/activity_about_weibo_title" android:drawablePadding="@dimen/app_page_marge" android:drawableStart="@mipmap/img_about_weibo" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:gravity="start" android:id="@id/about_tv_twitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_about_weibo_value" />
+                </LinearLayout>
+                <include layout="@layout/line" />
+                <LinearLayout style="@style/AboutItemStyle">
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/activity_about_cs_title" android:drawablePadding="@dimen/app_page_marge" android:layout_weight="1.0" android:drawableStart="@mipmap/img_about_custom_service" />
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_normal" android:id="@id/about_tv_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_about_cs_value" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

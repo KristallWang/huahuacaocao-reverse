@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:fitsSystemWindows="true" android:layout_marginTop="@dimen/layout_titlebar_height" style="@style/PageContentTranslateStyle">
+        <WebView android:id="@id/user_agreement_wv_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include layout="@layout/layout_titlebar" />
+</FrameLayout>

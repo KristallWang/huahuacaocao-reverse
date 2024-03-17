@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView app:cardBackgroundColor="@color/app_content_color" style="@style/CardView.MyApp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/device_fragment_top_ll_weather" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_40" android:layout_marginLeft="@dimen/app_marge_10">
+            <TextView android:textColor="@color/text_gary_color" android:gravity="center_vertical" android:id="@id/device_fragment_top_tv_weather_address" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:layout_gravity="center_vertical" android:id="@id/device_fragment_top_tv_weather_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/app_marge_5" />
+            <TextView android:textColor="@color/text_gary_color" android:gravity="center_vertical" android:id="@id/device_fragment_top_tv_weather_desc" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="晴 31℃ 风:东北 6级" />
+        </LinearLayout>
+        <com.huahuacaocao.flowercare.view.banner.LoopBanner android:id="@id/device_fragment_top_loopbanner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_marginBottom="@dimen/app_marge_10" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/PageContentTranslateStyle">
+        <include layout="@layout/layout_titlebar_text" />
+        <RelativeLayout android:id="@id/flowerpotble_disturb_rl_start_time" style="@style/AboutItemStyle">
+            <TextView android:text="@string/start_time" android:layout_marginStart="0.0dip" style="@style/TextViewStyleGray12Common" />
+            <TextView android:id="@id/flowerpotble_disturb_tv_start_time" android:text="20:00" android:drawablePadding="@dimen/app_page_marge" android:drawableEnd="@mipmap/img_home_item_arrow_right" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" android:layout_alignParentEnd="true" style="@style/TextViewStyleGray12Common" />
+        </RelativeLayout>
+        <include layout="@layout/line" />
+        <RelativeLayout android:id="@id/flowerpotble_disturb_rl_end_time" style="@style/AboutItemStyle">
+            <TextView android:text="@string/end_time" android:layout_marginStart="0.0dip" style="@style/TextViewStyleGray12Common" />
+            <TextView android:id="@id/flowerpotble_disturb_tv_end_time" android:text="5:00" android:drawablePadding="@dimen/app_page_marge" android:drawableEnd="@mipmap/img_home_item_arrow_right" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" android:layout_alignParentEnd="true" style="@style/TextViewStyleGray12Common" />
+        </RelativeLayout>
+        <include layout="@layout/line" />
+    </LinearLayout>
+</RelativeLayout>

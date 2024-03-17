@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/hab_fl_normal_images" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/hab_iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/img_home_state_normal" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/hab_iv_cloud_upper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@mipmap/img_icon_cloud_upper" />
+        <ImageView android:id="@id/hab_iv_cloud_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:src="@mipmap/img_icon_cloud_middle" />
+        <ImageView android:id="@id/hab_iv_cloud_lower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:src="@mipmap/img_icon_cloud_lower" />
+        <ImageView android:id="@id/hab_iv_bee" android:layout_width="@dimen/hab_bee_width" android:layout_height="@dimen/hab_bee_height" android:src="@mipmap/img_icon_bee" android:rotation="70.0" />
+        <ImageView android:id="@id/hab_iv_grass_left" android:layout_width="@dimen/hab_left_grass_width" android:layout_height="@dimen/hab_left_grass_height" android:src="@mipmap/img_icon_grass_left" />
+        <ImageView android:id="@id/hab_iv_pot_left" android:layout_width="@dimen/hab_left_pot_width" android:layout_height="@dimen/hab_left_pot_height" android:src="@mipmap/img_icon_pot_left" />
+        <ImageView android:id="@id/hab_iv_grass_right" android:layout_width="@dimen/hab_right_grass_width" android:layout_height="@dimen/hab_right_grass_height" android:src="@mipmap/img_icon_grass_right" />
+        <ImageView android:id="@id/hab_iv_pot_right" android:layout_width="@dimen/hab_right_pot_width" android:layout_height="@dimen/hab_right_pot_height" android:src="@mipmap/img_icon_pot_right" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/hab_fl_abnormal_images" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/hab_iv_abnormal_state_upper_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/hab_iv_abnormal_state_upper_ground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/hab_iv_abnormal_state_upper_plant" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/hab_iv_abnormal_state_upper_cover_plant" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/hab_iv_abnormal_state_upper_cover_water" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+</FrameLayout>

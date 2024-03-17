@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huahuacaocao.flowercare.view.ClippingFrameLayout android:id="@id/photo_pager_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huahuacaocao.flowercare.view.HackyViewPager android:id="@id/photopager_hvp" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:layout_gravity="bottom|center" android:id="@id/photopager_tv_indicator" android:layout_margin="@dimen/app_page_marge" android:text="0/0" style="@style/TextViewStyleWhite14Common" />
+</com.huahuacaocao.flowercare.view.ClippingFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_chose_area_item" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/area_checked" />
+    <TextView android:gravity="left" android:id="@id/area_country" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_marge_14" android:text="俄罗斯" android:layout_weight="1.0" />
+</LinearLayout>

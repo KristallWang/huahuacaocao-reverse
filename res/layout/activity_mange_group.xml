@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rcv_manage_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="75.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <android.support.design.widget.FloatingActionButton android:id="@id/fab_add_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.0dip" android:src="@mipmap/img_add" android:layout_marginEnd="26.0dip" app:layout_anchor="@id/rcv_manage_group" app:layout_anchorGravity="bottom|center|right" />
+</android.support.design.widget.CoordinatorLayout>

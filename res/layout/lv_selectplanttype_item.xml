@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/selector_plant_type_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height_120" android:layout_marginStart="@dimen/app_page_marge" android:layout_marginEnd="@dimen/app_page_marge">
+        <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/selectplanttype_item_iv_img" android:layout_width="@dimen/app_item_icon_80" android:layout_height="@dimen/app_item_icon_80" android:src="@mipmap/img_no_photos" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginStart="@dimen/app_page_marge" fresco:roundAsCircle="true" />
+        <TextView android:textSize="@dimen/textsize_18" android:id="@id/selectplanttype_item_tv_name" android:layout_marginTop="@dimen/app_marge_10" android:text="name" android:layout_toEndOf="@id/selectplanttype_item_iv_img" style="@style/TextViewStyleBlack14Common" />
+        <TextView android:ellipsize="end" android:id="@id/selectplanttype_item_tv_description" android:layout_marginTop="0.0dip" android:text="alias" android:maxLines="3" android:layout_below="@id/selectplanttype_item_tv_name" android:layout_toEndOf="@id/selectplanttype_item_iv_img" style="@style/TextViewStyleGray14Common" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColorHint="@color/text_gray_color_invalidate" android:gravity="top" android:id="@id/communitypost_et_message" android:padding="10.0dip" android:focusable="true" android:scrollbars="vertical" android:layout_height="@dimen/app_item_height_140" android:layout_marginTop="@dimen/app_marge_10" android:hint="@string/activity_communitypost_content_hint" android:maxLines="8" android:minLines="8" android:maxLength="2000" style="@style/EditTextStyle" />
+            <TextView android:gravity="right" android:id="@id/communitypost_tv_num" android:paddingLeft="@dimen/app_marge_14" android:paddingTop="@dimen/app_marge_5" android:paddingRight="@dimen/app_marge_14" android:paddingBottom="@dimen/app_marge_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0/2000" />
+            <com.huahuacaocao.hhcc_common.base.view.MyGridView android:id="@id/communitypost_gv_photo" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/app_page_marge" android:layout_marginRight="@dimen/app_page_marge" android:layout_marginBottom="@dimen/app_marge_5" android:listSelector="#00ffffff" android:horizontalSpacing="@dimen/app_marge_10" android:verticalSpacing="@dimen/app_marge_10" android:numColumns="3" />
+            <ImageView android:id="@id/communitypost_iv_photo" android:layout_width="@dimen/app_item_icon_80" android:layout_height="@dimen/app_item_icon_80" android:layout_marginLeft="@dimen/app_page_marge" android:layout_marginBottom="@dimen/app_marge_5" android:src="@mipmap/img_add_square" />
+            <TextView android:text="@string/activity_communitypost_select_tip" style="@style/TextViewStyleGray14Common" />
+            <com.huahuacaocao.flowercare.view.MyTabLayout android:id="@id/communitypost_tab_tags" android:paddingBottom="@dimen/app_marge_5" android:layout_width="fill_parent" android:layout_height="38.0dip" app:tabIndicatorHeight="0.0dip" app:tabMode="scrollable" style="@style/MyTagTabLayout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

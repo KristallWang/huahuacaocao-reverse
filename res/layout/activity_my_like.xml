@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/community_nitify_title_layout" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="@dimen/layout_titlebar_height">
+        <android.support.design.widget.TabLayout android:id="@id/community_my_like_tl" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/layout_titlebar_height" app:tabContentStart="0.0dip" app:tabGravity="center" app:tabIndicatorColor="@color/text_black_color" app:tabMode="fixed" app:tabPaddingBottom="0.0dip" app:tabPaddingEnd="@dimen/app_marge_10" app:tabPaddingStart="@dimen/app_marge_10" app:tabPaddingTop="0.0dip" app:tabSelectedTextColor="@color/text_black_color" app:tabTextAppearance="@style/TablayoutStyle" app:tabTextColor="@color/text_gary_color" />
+        <ImageView android:layout_gravity="center|left" android:id="@id/title_bar_return" android:paddingLeft="@dimen/std_titlebar_margin_left_right" android:paddingRight="@dimen/std_titlebar_margin_left_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/titlebar_back" android:scaleType="center" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/community_vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

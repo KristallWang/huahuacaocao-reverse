@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/smart_config_top_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/smart_config_base_ui_progress" />
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/black_30_transparent" android:layout_gravity="center_horizontal" android:id="@id/smart_config_common_main_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="24.0dip" android:layout_below="@id/base_ui_progress" android:layout_centerHorizontal="true" />
+    <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_button" android:gravity="center" android:id="@id/next_btn" android:background="@drawable/common_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="20.0dip" android:text="@string/next_button" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+</RelativeLayout>

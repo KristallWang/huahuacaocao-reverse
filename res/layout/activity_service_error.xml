@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <ImageView android:id="@id/server_error_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_load_repair" android:layout_centerInParent="true" />
+    <TextView android:id="@id/server_error_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_10" android:layout_below="@id/server_error_img" android:layout_centerHorizontal="true" />
+</RelativeLayout>

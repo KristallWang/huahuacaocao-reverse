@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/base_ui_main_icon" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/smart_config_common_icon" android:layout_width="83.29999dip" android:layout_height="83.29999dip" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/black_90_transparent" android:layout_gravity="center_horizontal" android:id="@id/smart_config_common_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="26.769989dip" android:layout_marginRight="20.0dip" android:layout_below="@id/smart_config_common_icon" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/black_30_transparent" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/smart_config_common_main_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/smart_config_common_main_title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

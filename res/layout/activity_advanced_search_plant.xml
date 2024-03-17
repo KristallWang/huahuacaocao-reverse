@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/title_bar" android:background="@color/app_content_color" android:layout_width="fill_parent" android:layout_height="@dimen/layout_titlebar_height"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_gravity="start|center" android:id="@id/title_bar_return" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/titlebar_back" android:scaleType="center" android:paddingStart="@dimen/std_titlebar_margin_left_right" android:paddingEnd="@dimen/std_titlebar_margin_left_right" />
+        <TextView android:textSize="@dimen/title_bar_text_size" android:textColor="@color/title_bar_text_color_black" android:ellipsize="end" android:layout_gravity="center" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_plantadvsearchchoice_page_title" android:maxLines="1" android:layout_marginStart="@dimen/titlebar_return_area_size" android:layout_marginEnd="@dimen/titlebar_return_area_size" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/title_bar_text_color_black" android:gravity="center" android:layout_gravity="end|center" android:id="@id/title_bar_look_result" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:text="@string/view_badge_filter" android:paddingEnd="28.0dip" />
+        <RelativeLayout android:layout_gravity="end" android:layout_width="38.0dip" android:layout_height="fill_parent">
+            <TextView android:textSize="10.0sp" android:textColor="@color/title_bar_text_color_white" android:id="@id/title_bar_tips_count" android:background="@drawable/hhcc_common_dot_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="0" android:lines="1" android:singleLine="true" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout style="@style/PageContentStyle">
+        <TextView android:textSize="@dimen/textsize_18" android:id="@id/advanced_search_plant_tv_tips" android:layout_marginTop="@dimen/app_marge_32" android:text="@string/activity_plantadvsearchchoice_question_leaf" android:layout_centerHorizontal="true" style="@style/TextViewStyleGray14Common" />
+        <Button android:id="@id/advanced_search_plant_bt_next" android:text="@string/button_next_choice" android:layout_alignParentBottom="true" style="@style/AppButtonStyle" />
+        <android.support.v7.widget.RecyclerView android:id="@id/advanced_search_plant_rv_species" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="380.0dip" android:layout_marginTop="@dimen/app_marge_10" android:layout_below="@id/advanced_search_plant_tv_tips" android:overScrollMode="never" />
+    </RelativeLayout>
+</LinearLayout>

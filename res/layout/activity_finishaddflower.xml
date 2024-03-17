@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/finishaddflower_bt_finish" android:text="@string/button_finish" android:layout_alignParentBottom="true" style="@style/ButtonStyleCommon" />
+    <LinearLayout android:background="@color/app_color" android:layout_above="@id/finishaddflower_bt_finish" style="@style/PageContentTranslateStyle">
+        <include layout="@layout/layout_titlebar" />
+        <LinearLayout android:gravity="center_horizontal" style="@style/PageContentStyle">
+            <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/addflowersetting_civ_icon" android:layout_width="@dimen/height_portrait_large" android:layout_height="@dimen/height_portrait_large" android:layout_marginTop="36.0dip" fresco:roundAsCircle="true" fresco:roundingBorderColor="@android:color/white" fresco:roundingBorderWidth="1.0dip" />
+            <TextView android:textSize="@dimen/textsize_16" android:textColor="@color/textcolor_normal" android:id="@id/finishaddflower_tv_name" android:layout_marginTop="20.0dip" android:layout_marginBottom="36.0dip" android:text="@string/common_dash" style="@style/TextViewStyleGray14Common" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/app_marge_32" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include layout="@layout/line" />
+                    <TextView android:ellipsize="end" android:id="@id/finishaddflower_tv_introduction" android:scrollbars="vertical" android:text="@string/common_dash" android:maxLines="14" android:lineSpacingMultiplier="1.5" style="@style/TextViewStyleGray12Common" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/addflowersetting_ll_baseinfo" android:visibility="gone" style="@style/PageContentStyle">
+                    <TextView android:textColor="@color/textcolor_weak" android:layout_marginBottom="@dimen/app_marge_10" android:text="@string/activity_plantbaseinfo_page_title" android:layout_marginStart="@dimen/app_marge_14" style="@style/TextViewStyleGray12Common" />
+                    <include layout="@layout/line" />
+                    <ListView android:id="@id/addflowersetting_lv_baseinfo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip" style="@style/ListViewStyle" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="SelectImage">
+        <item>拍照</item>
+        <item>相册</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="apex">
+        <item>尖锐</item>
+        <item>圆滑</item>
+        <item>微缺</item>
+        <item>带小尖</item>
+    </string-array>
+    <string-array name="bind_device_model">
+        <item>@string/dialog_connect_mode_force</item>
+        <item>@string/button_cancel</item>
+    </string-array>
+    <string-array name="camera_album_menu">
+        <item>@string/button_photo_capture</item>
+        <item>@string/button_photo_album</item>
+    </string-array>
+    <string-array name="custom_month">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="custom_weekdays">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="hourInDay">
+        <item>[01:00]</item>
+        <item>[02:00]</item>
+        <item>[03:00]</item>
+        <item>[04:00]</item>
+        <item>[05:00]</item>
+        <item>[06:00]</item>
+        <item>[07:00]</item>
+        <item>[08:00]</item>
+        <item>[09:00]</item>
+        <item>[10:00]</item>
+        <item>[11:00]</item>
+        <item>[12:00]</item>
+        <item>[13:00]</item>
+        <item>[14:00]</item>
+        <item>[15:00]</item>
+        <item>[16:00]</item>
+        <item>[17:00]</item>
+        <item>[18:00]</item>
+        <item>[19:00]</item>
+        <item>[20:00]</item>
+        <item>[21:00]</item>
+        <item>[22:00]</item>
+        <item>[23:00]</item>
+        <item>[24:00]</item>
+    </string-array>
+    <string-array name="margin">
+        <item>全缘</item>
+        <item>齿状</item>
+        <item>波状</item>
+        <item>有毛状物或刺</item>
+    </string-array>
+    <string-array name="operate_mine_comment">
+        <item>复制</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="operate_other_comment">
+        <item>复制</item>
+        <item>回复</item>
+        <item>发私信</item>
+        <item>举报</item>
+    </string-array>
+    <string-array name="phyllotaxy">
+        <item>互生</item>
+        <item>对生</item>
+        <item>基生</item>
+        <item>轮生</item>
+        <item>簇生</item>
+    </string-array>
+    <string-array name="save_to_album">
+        <item>Save to album</item>
+    </string-array>
+    <string-array name="shape">
+        <item>卵形</item>
+        <item>椭圆形</item>
+        <item>披针形</item>
+        <item>线形</item>
+        <item>心形</item>
+        <item>掌形</item>
+        <item>长圆形</item>
+        <item>箭头形</item>
+        <item>匙形</item>
+        <item>针形</item>
+        <item>圆形</item>
+        <item>扇形</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="share_name_array">
+        <item>@string/share_name_instagram</item>
+        <item>@string/share_name_twitter</item>
+        <item>@string/share_name_facebook</item>
+    </string-array>
+    <string-array name="switch_language_arrays">
+        <item>@string/switch_language_auto</item>
+        <item>@string/switch_language_zh</item>
+        <item>@string/switch_language_zh_TW</item>
+        <item>@string/switch_language_zh_HK</item>
+        <item>@string/switch_language_en</item>
+        <item>@string/switch_language_de</item>
+        <item>@string/switch_language_fr</item>
+        <item>@string/switch_language_nl_NL</item>
+        <item>@string/switch_language_ja</item>
+        <item>@string/switch_language_ko</item>
+        <item>@string/switch_language_pl</item>
+        <item>@string/switch_language_iw</item>
+        <item>@string/switch_language_es</item>
+        <item>@string/switch_language_ru</item>
+        <item>@string/switch_language_it_rIT</item>
+    </string-array>
+    <string-array name="switch_language_arrays_value">
+        <item>@string/switch_language_auto_value</item>
+        <item>@string/switch_language_zh_value</item>
+        <item>@string/switch_language_zh_TW_value</item>
+        <item>@string/switch_language_zh_HK_value</item>
+        <item>@string/switch_language_en_value</item>
+        <item>@string/switch_language_de_value</item>
+        <item>@string/switch_language_fr_value</item>
+        <item>@string/switch_language_nl_NL_value</item>
+        <item>@string/switch_language_ja_value</item>
+        <item>@string/switch_language_ko_value</item>
+        <item>@string/switch_language_pl_value</item>
+        <item>@string/switch_language_iw_value</item>
+        <item>@string/switch_language_es_value</item>
+        <item>@string/switch_language_ru_value</item>
+        <item>@string/switch_language_it_rIT_value</item>
+    </string-array>
+</resources>

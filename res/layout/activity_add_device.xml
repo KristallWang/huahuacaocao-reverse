@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/app_color" style="@style/PageContentTranslateStyle">
+        <include layout="@layout/layout_titlebar_translate" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="100.0dip">
+            <ImageView android:id="@id/add_hardware_iv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/app_marge_10" android:src="@mipmap/img_addhardware_connecting" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+            <TextView android:gravity="center" android:id="@id/add_hardware_tv_message" android:layout_marginBottom="@dimen/app_item_height" android:text="@string/activity_device_near_your_phone" android:layout_centerInParent="true" style="@style/TextViewStyleWhite14Common" />
+            <TextView android:gravity="center" android:id="@id/add_hardware_tv_message_status" android:layout_marginBottom="@dimen/app_item_height_50" android:layout_below="@id/add_hardware_iv_loading" android:layout_centerHorizontal="true" style="@style/TextViewStyleWhite14Common" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:id="@id/add_hardware_bt_restart" android:visibility="invisible" android:text="@string/button_retry" android:layout_alignParentBottom="true" style="@style/ButtonStyleCommonWhiteStrokeWhitePress" />
+</RelativeLayout>

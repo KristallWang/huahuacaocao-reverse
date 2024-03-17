@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/bga_refersh" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/lv_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/view_list_empty_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/view_list_empty_ll_tip" style="@style/PageContentTranslateStyle">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:src="@mipmap/img_load_list_empty" />
+            <TextView android:gravity="center" android:id="@id/view_list_empty_tv_msg" android:layout_marginTop="@dimen/app_marge_16" android:text="暂无数据" style="@style/TextViewStyleGray12Common" />
+            <Button android:gravity="center" android:id="@id/view_list_empty_bt_event" android:layout_width="160.0dip" android:layout_marginTop="@dimen/app_marge_16" android:text="按钮" style="@style/AppButtonStyle" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

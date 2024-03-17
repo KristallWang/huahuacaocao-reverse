@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:minHeight="37.0dip" style="@style/PageContentTranslateStyle">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/baseinfo_item_tv_name" android:layout_width="50.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="商品名称" android:layout_marginStart="@dimen/app_marge_14" style="@style/TextViewStyleGray12Common" />
+        <include layout="@layout/line_horizontal" />
+        <TextView android:textColor="@color/textcolor_normal" android:layout_gravity="center_vertical" android:id="@id/baseinfo_item_tv_message" android:layout_width="fill_parent" android:layout_marginTop="@dimen/app_marge_5" android:layout_marginBottom="@dimen/app_marge_5" android:text="迷你玫瑰 MiniRose" style="@style/TextViewStyleBlack12Common" />
+    </LinearLayout>
+    <include layout="@layout/line" />
+</LinearLayout>

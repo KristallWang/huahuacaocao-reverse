@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/post_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/post_content_civ_userphoto" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="@dimen/app_marge_14" fresco:roundAsCircle="true" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_normal" android:ellipsize="end" android:id="@id/post_content_tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:maxWidth="220.0dip" android:text="" android:lines="1" />
+            <ImageView android:id="@id/comm_item_iv_manager" android:src="@mipmap/icon_post_tag_manager" android:layout_toRightOf="@id/post_content_tv_username" style="@style/commu_item_tag_icon_style" />
+            <ImageView android:id="@id/comm_item_iv_sticky" android:src="@mipmap/icon_post_tag_sticky" android:layout_toRightOf="@id/comm_item_iv_manager" style="@style/commu_item_tag_icon_style" />
+            <ImageView android:id="@id/comm_item_iv_vote" android:src="@mipmap/icon_post_tag_vote" android:layout_toRightOf="@id/comm_item_iv_sticky" style="@style/commu_item_tag_icon_style" />
+            <ImageView android:id="@id/comm_item_iv_recommend" android:src="@mipmap/icon_post_tag_recommend" android:layout_toRightOf="@id/comm_item_iv_vote" style="@style/commu_item_tag_icon_style" />
+            <TextView android:textSize="@dimen/textsize_10" android:textColor="@color/textcolor_weak" android:id="@id/post_content_tv_ctime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/post_content_tv_username" />
+        </RelativeLayout>
+        <ImageView android:id="@id/post_content_iv_delete" android:paddingLeft="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/selector_delete" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/textcolor_normal" android:id="@id/post_content_tv_message" android:paddingLeft="@dimen/app_marge_14" android:paddingRight="@dimen/app_marge_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lineSpacingMultiplier="1.5" android:textIsSelectable="true" />
+    <TextView android:textSize="@dimen/textsize_16" android:textColor="@color/textcolor_normal" android:gravity="center" android:id="@id/post_content_tv_tip" android:paddingLeft="@dimen/app_marge_32" android:paddingTop="@dimen/app_marge_16" android:paddingRight="@dimen/app_marge_32" android:paddingBottom="@dimen/app_marge_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/post_content_btn_complain" android:paddingLeft="@dimen/app_item_height_40" android:paddingRight="@dimen/app_item_height_40" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/app_marge_16" android:text="我要申诉" style="@style/ButtonStyleCommonGreenFill" />
+    <FrameLayout android:id="@id/post_images_pager_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_10">
+        <android.support.v4.view.ViewPager android:id="@id/post_images_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="bottom" android:background="@mipmap/icon_post_image_indicator_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:layout_gravity="bottom|center|right" android:id="@id/post_images_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/app_marge_16" android:layout_marginBottom="@dimen/app_marge_16" />
+    </FrameLayout>
+    <TextView android:id="@id/post_content_vote_desc" android:visibility="gone" android:text="投票哪个最漂亮？(单选)" style="@style/TextViewStyleGray14" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.huahuacaocao.hhcc_common.base.view.MyListView android:id="@id/post_content_lv_vote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+        <com.huahuacaocao.hhcc_common.base.view.MyListView android:id="@id/post_content_lv_vote_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+    </LinearLayout>
+    <Button android:id="@id/post_content_btn_vote" android:visibility="gone" android:text="@string/btn_vote" style="@style/AppButtonStyle" />
+    <include layout="@layout/view_visit_praise_comment_share" />
+    <include layout="@layout/line" />
+</LinearLayout>

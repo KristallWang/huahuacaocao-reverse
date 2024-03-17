@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">android.bugly.qq.com</domain>
+        <domain includeSubdomains="true">social.resource.huahuacaocao.net</domain>
+        <domain includeSubdomains="true">pkb.resource.huahuacaocao.com</domain>
+        <domain includeSubdomains="true">articles.resource.huahuacaocao.net</domain>
+        <domain includeSubdomains="true">bbs.huahuacaocao.com</domain>
+        <domain includeSubdomains="true">bbs-dev.huahuacaocao.com</domain>
+        <domain includeSubdomains="true">share.huahuacaocao.net</domain>
+        <domain includeSubdomains="true">dev-share.huahuacaocao.net</domain>
+        <domain includeSubdomains="true">app.huahuacaocao.com</domain>
+        <domain includeSubdomains="true">app-dev.huahuacaocao.net</domain>
+        <domain includeSubdomains="true">app.huahuacaocao.net</domain>
+        <domain includeSubdomains="true">www.huahuacaocao.com</domain>
+        <domain includeSubdomains="true">upload.qiniup.com</domain>
+        <domain includeSubdomains="true">upload-jjh.qiniup.com</domain>
+        <domain includeSubdomains="true">upload-xs.qiniup.com</domain>
+        <domain includeSubdomains="true">up-xs.qiniup.com</domain>
+        <domain includeSubdomains="true">cnbj2.fds.api.xiaomi.com</domain>
+        <domain includeSubdomains="true">apilocate.amap.com</domain>
+        <domain includeSubdomains="true">diary.resource.huahuacaocao.net</domain>
+    </domain-config>
+</network-security-config>

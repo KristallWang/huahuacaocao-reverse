@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/plantbaseinfo_ll_baseinfo" android:paddingTop="@dimen/app_marge_14" android:visibility="gone" style="@style/PageContentTranslateStyle">
+                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/app_marge_14" android:text="@string/activity_plantbaseinfo_page_title" android:layout_marginStart="@dimen/app_marge_14" />
+                <include layout="@layout/line" />
+                <com.huahuacaocao.hhcc_common.base.view.MyListView android:id="@id/plantbaseinfo_mylv_baseinfo" style="@style/ListViewStyle" />
+                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_14" android:layout_marginBottom="@dimen/app_marge_14" android:text="@string/activity_plantbaseinfo_knowledge" android:layout_marginStart="@dimen/app_marge_14" />
+                <include layout="@layout/line" />
+                <com.huahuacaocao.hhcc_common.base.view.MyListView android:id="@id/plantbaseinfo_mylv_maintenance" android:layout_marginBottom="@dimen/app_page_marge" style="@style/ListViewStyle" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/plantbaseinfo_ll_introduction" android:paddingTop="@dimen/app_marge_14" style="@style/PageContentStyle">
+                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/textcolor_weak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_plantbaseinfo_intro" android:layout_marginStart="@dimen/app_marge_14" />
+                <TextView android:textColor="@color/textcolor_normal" android:id="@id/plantbaseinfo_tv_introduction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_marge_14" android:text="@string/common_dash" android:lineSpacingMultiplier="2.0" android:layout_marginStart="@dimen/app_marge_14" android:layout_marginEnd="@dimen/app_marge_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_titlebar" />
+    <ProgressBar android:id="@id/shop_pb" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/app_marge_2" android:progressBackgroundTint="@color/white" android:indeterminateTint="@color/webview_progressbar_color" android:indeterminateTintMode="src_atop" style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+    <WebView android:id="@id/shop_wv_shop" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/view_list_empty_community" />
+</LinearLayout>

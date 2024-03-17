@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/PageContentTranslateStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_titlebar" />
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/bga_refersh" android:focusable="true" android:focusableInTouchMode="true" style="@style/PageContentTranslateStyle">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.huahuacaocao.flowercare.view.fresco.AppDraweeView android:id="@id/usercenter_sdv_user_photo" android:layout_width="@dimen/app_item_height_80" android:layout_height="@dimen/app_item_height_80" android:layout_marginTop="27.0dip" android:layout_centerHorizontal="true" fresco:roundAsCircle="true" fresco:roundingBorderColor="@color/line_color" fresco:roundingBorderWidth="1.0dip" />
+                    <TextView android:textSize="@dimen/textsize_16" android:textColor="@color/text_gary_color" android:gravity="center" android:id="@id/usercenter_tv_user_exp" android:layout_width="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="27.0dip" android:text="--" android:layout_below="@id/usercenter_sdv_user_photo" android:textDirection="anyRtl" style="@style/TextViewStyleGray14Common" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/app_marge_10" android:paddingBottom="@dimen/app_marge_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center" android:id="@id/usercenter_hua_money" android:layout_width="0.0dip" android:text="-- 花币" android:drawableTop="@mipmap/icon_user_center_coin" android:drawablePadding="@dimen/app_marge_5" android:layout_weight="1.0" style="@style/TextViewStyleGray12Common" />
+                    <View style="@style/VerticalLineStyle" />
+                    <TextView android:gravity="center" android:id="@id/usercenter_tv_roulette" android:layout_width="0.0dip" android:text="花币抽奖" android:drawableTop="@mipmap/icon_user_center_luck" android:drawablePadding="@dimen/app_marge_5" android:layout_weight="1.0" style="@style/TextViewStyleGray12Common" />
+                    <View style="@style/VerticalLineStyle" />
+                    <TextView android:gravity="center" android:id="@id/usercenter_coin_trade" android:layout_width="0.0dip" android:text="@string/fragment_usercenter_menu_exchange" android:drawableTop="@mipmap/icon_user_center_coin_trade" android:drawablePadding="@dimen/app_marge_5" android:layout_weight="1.0" style="@style/TextViewStyleGray12Common" />
+                </LinearLayout>
+                <TextView android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="@dimen/app_marge_14" />
+                <com.huahuacaocao.flowercare.view.settting.ListSettingView android:id="@id/usercenter_lsv_setting" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:id="@id/usercenter_rl_light" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height">
+                    <TextView android:text="@string/fragment_usercenter_menu_light_switch" android:drawablePadding="@dimen/app_marge_14" android:layout_centerVertical="true" android:drawableStart="@mipmap/img_user_center_light_switch" android:layout_marginStart="@dimen/app_page_marge" style="@style/TextViewStyleGray12Common" />
+                    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/usercenter_rg_light" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/app_page_marge" android:layout_alignParentEnd="true">
+                        <android.support.v7.widget.AppCompatRadioButton android:textSize="@dimen/textsize_16" android:textColor="@color/selector_main_tab_color" android:id="@id/usercenter_arb_light1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LUX" />
+                        <android.support.v7.widget.AppCompatRadioButton android:textSize="@dimen/textsize_16" android:textColor="@color/selector_main_tab_color" android:id="@id/usercenter_arb_light2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAR" android:layout_marginStart="@dimen/app_page_marge" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>
